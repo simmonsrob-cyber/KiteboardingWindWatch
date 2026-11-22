@@ -1,0 +1,2749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-title" content="Wind Watch"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="theme-color" content="#060e1c"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAABIFBMVEX////3/f7s9f33267j8fy/0eBdyuhHxuf0qi/umxjokhDokg/okg7okAylnohHdZo8ZIcjV4QPV5QQUYoOVZEOU44OUowOUYsOUIkOT4cOToYOTYQOTIMNTYQURXEOSHsNSoANSX4NSHwNR3sNRnkNRXgNRHYNQ3QNQnMNQHALRXgMQnMMQXIMQHAMP28MP24MP20HP3IMPm0MPmwMPWsHPXARN1wMPGkMO2gMOmUMN2ALOWQLN2ELNl8LNV4LNFsLMVcKMlkKMFYOLk4KL1YKL1UKL1MKLlIKLVAKLE4KK0wDN2cHK1ALKEcJKEgJJ0YJJkQJJUIFJkoJIz8IITsIHjcFHz0IHDMGHDcGHDYGHDUAHD0HGjIHGC0GFSgFECIUEzx0AAAcWUlEQVR42u2dCVtaV9f3DwhpTBqGJ82gIGgcmEEFFWdQccJZTIy3mu//LZ619trz2eeA9k6f673erthWU2t/rvz3GvdB73/C7S/DPv31Sdpnsi/CvjKb+DpBNjkxiTY1OZWZgrdMVtq0ZjPTM2Tf0Ga/zZLNcZufmydbQCssFMi8cGQD+pNGbEN/NZgnuWWEKWKdeWZGR2bYBrROjMwjQP9l2adPtpu/EPJXC1lCZ6bo15TLyzM+Zg48azlZQjMrFirFkaE/fXJACzcLbUzo0KAMhpxV0NOGceIZp5eFnyWzgK5UKt5IwjClYYtZOtqQBmhjKmOKOWsZcttinjWUYYm5WCxW4C9vFD+7vGyJWbmZnMx0YSCDsqdnykuGlWdnOLdDzGUlZwFdQeYAeVhudhALZht50jiCUxwaeb8B40w6lUwmE3FmiUQymc7Cd1H+NjPjOn82cQGdDOqoOuUxsphtJwsxk5NBzBx5emlpOoWw0YhnWCQWjyfT5ZWlfD4/O+eMGQtKGhX2q1qtesOChhHnXJFZiXnCDHMZTlxeSifjcYEbiUTHmEUj/Lci8URqaaWcN4NGeUGXMxdzAHRgMvFHZuP8TUplTHE5E3J56WMyHiM4RH0LNs4M33sL7MSdzBN2QGTmYgZtVEvVkjeqND6baubIdmSeyhB0NkPI5RQRRxAXQMfeEqzOPjaGLo8B9lzeisymNKqAXC2VaiZ0cM72ReavrsjMpQHHL0PISaaK6BgRvjWhFTtww6fFk0tLecZspZMKlzMiV6u1Ws0bycuf9AToj8xczDIyo5snp5eSceZj5mLic0G/pX/PsFP9OUvMlSKmE5IyIpue/ivEzZ8/O/1s5exJ/fxNLqU58riOOTbmgiZuwI4mV5bmzDhHyChmhl2rKU//FRw07Mjsro1kzibm7FIy5kcOgWZ/DKCleHplTiOWAYNcDL/wzRuxNvpsV6C2n0kZ3M/fsuhmH/LbcQofwdhwIEEiei5RYmZyBuY6ySMkm3wOO4CTE2YJyhP2ZBmlEfEha9DjfhPU0WR/Xri5yJEFMbN63XtZof/FWYHyApROYHaSScN55NhJHJffDGUZ4/t4C98tUWM5V0Rkis01Jg9ArtUb3ghi/uwKGRNaLmFeFsVRZikJCWPMpwwRlNEiVjrHREn442/hXwF1pUL5hCmjVpVOrtcbjYY3YqH/JaDQp5gxlZElMzBHkNnJ62P1sdMnJfsLSswAzc4gvNUbyGxAu9qpL84wN2lmE62fIj+bec/kpdpDD9FCKepbiqaAmgc5JeYaIS8veuFJO6g2MsSstYCZciqGR1DPGhIGaDHmjX8IMO2TY6mVAk8nFOZKNVLGYmN5edkbPcz504mvbc1OZ+LSz4w4onjfvgOwsbEPH94FGCeHGirixfsFVAaPzRDmGPIymReCHF7oiwyoNU/Z7FKc61kjFrxI++Ht2PiHd+/dJsjfjaGqC1qcK5GbCbrZ9IIKfbeYZT815e+npqdB0MQ8zvzFKw/E/ZMBvQ+H5uQfgDnRL8gwV4IoJ5Gby80WQX8aPoIJUIYxz8jOpuFPlpAjvPAAYOZBTgTQb0OhiTmOzFqca0jmZrPVanlGZLaqOSsDagmQe9qcZ2TLTNAsr7HswhShIw6F5sy1WpGHOSFmoQyC9ifAL5/Dz59M2lPm2CjLxTFGTvYRM+jxUOh37xlzbqVYM9IJZ+aOBuhXiVnmbH0GMxMH9xLyuIMY7c/3ED4CoeEUCmYu5pIp5hazNW/kQl902hmtBNWRmaMxP3PkACyADmYeR+YCMrNIx8W8qDkZmSW0+wAOj8z6mIv61xDk92HhA+MhRJx4SWiDFxqGMIB4TUD7Cv0vztqIj22VmDVo5mg8fiHIIdAYoDHkJPr1okiAPGkTs/DyWrvd9lSdEVAaCWFk/MM5YwiaZTV0KHJg+EBk1gEk+yWqP5WYTWUgM4MOH85NamLOZKbcyNPT5XQE1PwunNkNjcjj1Gv1c6zQEGJeJCcrZSBye92zcrY90beGcwEDfZw2l5MjuNoR8xgyqjmWXOFyNoUByPC21uLI7XUB/cUS89fwQt9g5tPx6SXeGFJFFAT9zoh578jLmPLBzaWiLmY9nTBhrDHidQ5tuXlCJcAJWRpNGdJwTcenZ2nSgdh/QvIOjHl/qvroA2o5QiMPdDMrM+rCzc2meQCJeXPTe0Whb+165A4CnD2D7SFgvxt/784uKOp3H2QlSrMlGOX1+7kSCaOuxCyIWwp5E5gR2swlvom+TCch2ymxgpiZXUknEDsaG/sgaiWdnRen73nlTFM88HK/WOzXS0LMDVvMupsROkDMZjrJBqQTuTbh0LP5fHkljSKJ4siR9yh/yjL/PXMuBGqstlntGo0nc4hcr6eKDZVMmm4xM+StLc8RMtxj20BkScx2EIidT8ajok2FSvWdbKj+HKd2kA/XYzBR74OWi6VSPwn+Lmkhwylmhry14blqo+B2KmwLyNcmiL0UT4iptOhkaZCuVgEx+JQcJ2bMyUZJlRkWsxAzY2ae/moW+qYyQiKza5/GtoD5JXTbUpYtLPxTgijypvIrSFzAwEzM/eW6JmbDzW3NzRa0icwL0KlMaMhQbv6mdj35lWQ8P5evrPRXCmlYDPHNEC6HYE+UShf6fQTOFWkIypkhbJhuXlNulswbgLy97YVtpwKFMe0Qs9pOlfPx5AosIvL5+YWlFUaI1idbWakWcjD1qtIMtM6YE/3Fkk/NwstcGZuIvI3muVatGb4H5Acw419rm9CzBnR+KRVPrcwv0HRcrFAKcrrPJ7d8OFBjzK3lkogZVp1hKgOId3Z2PK1rnZywxuMZ4WHf4p0FZfqdWXOnzdUhdxCFgjZsLharVX0ICpG5qDHrtZF0sy5mYmbQVgeIi/gp7tVs5uPHj2mffcxkp4G1jMbihba5nFtAdRj74QrfTlVooI/DAeqnYAjTT8UTzWYpSMybSszbHHln1zOEMYFN4BSgTjBU3K8GWiqVQvzsDGMHB/PF5dwKqcPYQRTYdJwvTiR0nZgbrVJQaF5XyMLNu7scWiaTqamJj0NgHfTpdDYP4LS4nEN1VIxVq76F0MYZDWIutUoqAfrdrIQhmBn0pCz03bipFHmVGfvA8WnwCWXaAgp1yC1gRS4BtfEcFvrIHC+tlZqOQt9Us1TGroQWfk5bFOmPHycy7ILDjB4kZmfhEILa2beg/RfpCrpaqMNYwhcrYgZaVWMjxpxrl8yu1VLGFiljR2NGaHkAOXSKnzRgtbuTGc6P30CZjmF+WrKnK7i4JHXwA8iX8MhcKlW18RxjTjPmlsbsD3Mb25abu92uJ3IJK0HRtxkeN9yVhpZO4OYAHD5in8tn02kMc/MFpg61a9WWgPrQSDD3kXmImOUBJOQOhxaXHQSsO2vzQmNWT9kiCS4sVCooZFLHAl/Cq72lcHFNFM2KOVDMG5qYdwQyMHcUNA6NMo7kZ3vZLI7sGxqaOoi4IsMcP4Emc1P2Jr7Q7D+AzM9gnqrmVKXhJA4oNKwrJRVUxwLfwrNNPO0trbktY04LP+uFvkLetty8i8Twtrfn8f1wUAc4HVA0m9dgyhJaqKOob7T1sS3OQJdL/Rwx+5QhYoaWAXd1ZXT2EJpXGVMvK/StW2jyrgOqY77KL8KIpbYa2/J5os3cdhT6W3bIYF4G4j30NI3nsk4xT7uJA6RRKHB1KOJSlddyNTE2gvWUxmyIWUPe0MXclWJG4sPDQy9oBOMTs1nozzkuKEIOJHWwMkPc0KBqTuwtoQcstRnzoibm8AQo3IzKQGYG/ZpC37y6KlL2AqgjV9UKjZp5/rCfYswp9POav9CXodlkRmwmjB4gHx152Uy4mGcc90CR2YImq85D31QQVTPfDyMzuRl7Eyg1EsC8OKzQ1yIzKUO4+QihQ++BftPTST5PSXC+DLkE3gpYIFdE+Yn6YOqA38acrS8BG2LXutxYa/qZN00vb1uRucvFDG4+QmYJHdZpf8OrfrM8YbPSmRn+Z/TePPBXl5ZqVehCFqqsQZHXYHALKJmbAEvMa+7hgKmM7i4hdzQvHx0dH3thwzkG/G1uVlYXvDQNLl2hQy3WVlbqrMkuKTETMjC3BXPbUYHadQYxKzEfIvGxgHaKGbCxlpudydo1aGA7AKOANOLnc6X6ykqjjhlF21sutvoJEP2iJoxgMe86xMyYT068wEvNjDdjtTFaNwDtSjarPmDuhpuj2uflSo1Waxm8vEidNmdu2gdQRmY7zols0tOYTxA6KGfPZnVexpqdBvmWFypk1UpVXC8COdeq1QJUpYk8w1f/US63zJGROakxo5vX/WLekW7WxSzdDMgnp15AZJ7NaA1MZiZPZ5DGGL7wTI1gARqRVL8Omshp6Klckw8HmpzZEeb0rlVXxp5iPj4iYmDWoGembWjZsWLEEAmlPG9f9itSAgRoyCxsqV3H2FbK5Rh6rkXTAWJurTmGc0bXStWcjqzEzJANaOPhjdnZbCZPUSOfdz0JoW7b8kKjWMsBVJEKuhJObWEm3sjlaD9sMAfNMwwxd2wxC2QN2pe0cQwDvLMBtZFwsyhBS6SOonbXAVNgi7qp5iJjXlsbGjN2/WI+tpgZtFVm2LM5n5d1ZWClT6cR51s5GCfWeTZh83F0Mxpn/lti5sQXFxee/sCJWRrNGg+cLPihSRdFXoDWSR0lfj8Kdj1qBEPacEyafUm70+0qZpa0j33MDDqgA5wLKkGVm7WxUZGpw9q1NnU/+6rm7a1AMetx7sRmvvBmAipQZ6Gvhkaqn+ItK1MHbiC0C1K8axV+trpWq9DvmoW+qDN8bpbQ3wLkHOBlfke/qM0zSg1UB3P0InPzsrxSgsyJzXWjBSQxW8oQdcaeFTMEsWA+9/SFmlno22Iu6DFDDuf4hUquDl4068O5Jg4ZNzfbvt7EqkBHETNDvrz0fAP9ufBnZCp8OiCGc7xqxnl+bllfDzepnVLMDjHvGOMMu844cTBfonnfZpwdoP30hi8yV5BY9qylZaYOuZ1qihEMY14H5s3QdkooQxT6jjgn3Hx5deU5w5xAXnCHuYrZT9VpoA/qELWRmMG0GXN7s70ZzLyrlXPOpK2YGbKCng0dG+nnz3iooCTaVqaOVoMjy/VUC5nXttrBau5qB1Aow0IWXr7gyNfXXjCyPwOqhze0y+NA3KiTOvSbA2uMGYZfza318OEcHw70bDdbYmbMaAzaPoAS2qAuUjqp+oYD2GiTOhrL5kCfMee21N5kwzHpEnVGT2unAsXMkAHa9zAux7b2aWJ5Ym6nRAIkdWhiRuY1xry9PqxrHVXMnJhBS23QiHyhzOYCVO3PMXhotas16k6w1QZRkJ/rYp7RaKI6GuZAXzEHTceNrvXQ7+YLPcxJN1/f3nrCy6wxgc1wVlsHKWMtYX6hUIV+FXsTY56xSOpYlOdvjTHDICm3s+4u9MHNHTHP4GOjUd18S9CIPJfPjNByp6jVBh/X9GswTB1rTW2guG4xh8wzAmKGjmwx33p0/vIpHYt12myalOdzGeF+/kklWTNjOllsoToWtVnzensbh4zd9aCkbSRAvWkVyIY2JPItmcePHkkgPzevNdu830YpLC0xVRR5y4pPQqirq1IdcjYgmIPqjE43oAUMiBnXBrOAhs4VDyDbmpgPAypDfJD0cqNYWq5pV1dbDVBHqa1t4X3M/gSoZxO7nRLlnBHmFPNg4IlybkF7TNvsp6pFtuipipYVnCxnoMjcXCuZI5j2VlMymzGju+sujVwZUORsgayYCZp4y/O+x4e1Qr+mHt+o63cqYQjD1NEUu57N9tYaMW84lWG1gHbTqmdAh5uReeDNBzXaxqqnau1N9Js7i0wdagmxtQ5DRuXngKK55z6AOvKlQxkDgnYWGuIh7WJV3w/LG4okZ75rbaM6WibzwXpoAtyzhnOWm11hDpFNaH9pRI22Yz+si5l32qiONd4Crm9tErM5HDBKo0M7NPvD3JWLWdidh8T208MFPurS98N1PrUF5EWjAsUWcHGTN9rgYM7ME2CAmI154uhiZsh3d96C/fx+he8AK9p2itdzlph50l7EVhubKWTeRuYNh5jFpHkvvJy7vDSyiU8ZyKygzcfKScxG1az2JqyWg6gBv5o8swh17MAAuru+sbFhjY2cYj4ZVczSzXeMGaAtZnl1hzetdAK1J5H4DKZJt+y6/bNkfIu2Zt2DLlx9vOkeHJwdbPvmGSPUGQEZcKB7WUHLEUxFfxRX9lPao4DiQQgoPMX2BbaCwhKxBK8KD3ZNORt7Ew5tn78LMwPeBjHr0OKR54pvP9zQHuvhhX47EWUGLyKhGdwj5e8lunZvIsQcVGdcOMXsQAZo86VVKuq6n/EgYEN5uUlhLhqNCYtq/+TvR6PpM1nNdVyR2XUAg8WsM//44Vk5u6hecUDlbBGZ5XSuRdDMp4pd+4hBB4jZEeaCxHzr9zIwE3SRtFHhW3j5MG6d0smib9QFPWsiEmXKiIFCyLSPopHEmSVmPTSfmm6+HFnMDJmgxaSLZs3yIW3RT4lkYt5q7qeSqXgkFovEU7T9FB/RQeyZixOnmE9NMVvMA6cywB4fPbk4qVZFoUFhTjQn8rGepnENpr11lkMFR5IY4yDKiY/OmO3+3ULfJQ3O/OgVC85LlTX7ERnr5k57u3uQYK5d38Bksn6GH0XjG7urLNDZVXNYoT+imgUyQPNXHChWzVcc0Goj/6VKqPO76UQcjhu49owKjY04OXrVmIGGT8fP7ULfUWcYzI9knvPqqhDzouuK/joyJ2Ps5CE0zo02zpLo6FjuTPYm2kr7hWK+DRAzZ3568tRsTg7IzQcubTETc4QiHvyF1DsbZ3QMz3bVBaleL7Sdksqwc3aoMgAZoKvyUnO1JB/fV1cHWn43Q52Ph44yH3q3u71zkGbHMHW262wBX1MbuZXxxKCtF/0QTw9LMTf167a8aMYjKDJ3DELyxsYNHcNV47JDyKrnQhTNAbVRGDJ6Wj1UIB7S5mFu2XV3nE1tt+M6dLy7s7vKj+Gu436Gq9APGg6MxEzQ4gDKF6MwcrZ2qZJvp5Q6UB/xtV15DLuhYyOr0A8S88ApZsUM0IaY1TNqTjHTRH/bgl7v8mN4s6tXoNbaZJiYg7xsuxmha9Z0YNF+Rs1Ghtn4jiWPHj+GNx01HBBFsx3nLsO7Vh/yD5v46fnZs8Q8TBloLPvpB5Fnw06vM0zMVs4eKuYfPi8/P3NoedsPJqDux3qMyw4bXS3kRUDJ4hh2huxN1AnUkQe3g1HFTMwArd3PcIpZ3faTc1uW/0SYTp7JY9gRt/2CD2BImeFLJwHI5GnX08POx3rEQJHlP6Hos90bfgw7KjSfjF7oj64Mwfzs1Wu80DequZZ23dZ3QXGD5T8hj+SNPIb6PMOKGZeXLyz0/ciS+dlrmIV+03reRIlZzUBJHdLV/0nSMTxyzECHdK234cJ4dBEz6OAKtO2+or+7ccMwFbQXi3lwDFXb6thBXF0GN9qB5ZwTmaCDCn331VWYZ3TX4RUH40zXqOXVeCQSXz2zM+CF3WmPoOYfoQdQQi+aNwdawU8isaERjWB6q8nkqoQ+w4/OAmag5xfh1dywOsOP/OuXZyRAvzKUmLe1mzu7Bzc3NxK6c3ZzE8B8fjHEy5YyHv3MPmQGHS7mDfeqZ3f1TEL3DjudgPsZl2ED/ZFihh8ZoIc+17rtv1TJqmYFfRgUNC7D08ndi8X8S0C7xEzIm/pGzZyOm9D/mJgFtEMZ+kOijoc3qJ/SoI+ClHH5cmU8hgtDQLvLOXVBatv9WI8O7WgBX4f8NEzNCtr/WM9WwGUjuTjp9fZMaPdGe5S57QsOoAbtL402gx7r0ZYQPRXyjoO28FejifllbkZoU8zrdNdhmwylYT6j1pG3/Q41aP8MxvbyQDeJO9oB/OUzTxTNbbzmsLNLzxvBQJHpFlA5tLq6yrtWDXrfdT/D6E2ur68uTk9Ojo+pdAU1XV7fDu4eEPbHi5RB0Hj+1tqbW7tdfiunpxn74GCv07WRwST0f/atbGIUoIB7cnR4QJdIwRm9A/7+Xu/o+OJ68AN4X+Rm7unNne6eReuzPfvqqgZ9InO2Uc4h8cUJ8h64vybSHxxd3P4IdPMvt3lA3BsCrMi1x3o0aDsDXiM0uvj4EONMb5g3Dk+B+/l5RDcj9MjEpBe56zmW0N9PHSHj8vS4N5xYgHd6p9d3gQnQtOe7C6/3QmOOhsC8r2la9zLY1eXpUS9IE+4v2tvr7p1cmdwu4qfB6QE87N57hR0C9+l+nDquWO4/pyJiXF1dXpweg4wPXv41kfvw9GrwGODj56fB1ckeCxevggbr3PApArh6/5LJ4/T05PjocG9kUTi4Abx7cHx6eTv4oQn86XFwe3lyCPF3j8T8SujOWU61tgmY0vRYKDs46P1NA6i9PcSDPyx2gPjHFJD5J70Wmis6xqcInd5/0wTeAXeCnT68vyMOWHWyv8fS/2XqIfYq6D02vUMniwjSOer8X0P70rnP0QmCTYq4lxjR1cO+8qug92wTBYjJnIpyB9/QgIxtLnqj1AHhX/ml0LyEORE7nEuIY6cnLIRZQQw+jfwbTd2sCnGHyHr0r/wSaCxcjk4urm6/390/GPbz/vv3W8jI+D84sE8haGK1s3qT8IJkffjSrzwyNCu0rgd3P+lrkd3f3/P36HcHt1enR3u8Db9hIRpGjns3zKSs6RP2lIdH/sov9Lh3cvn9XvuiDrvH/8GPu8H1BUGyrRBE6AR/iDZJN1NA1vSv9/jCdsSv/PBwD/muNyo4/OH1vJ9hXxXt7g7e7h6eoFo5z7Ef2hOh60ryZ+FE+T0m9tJy6dUzJIciYuhXFuTM49cXx0PBmdpOr757obhoj493D8/Pt7kkXjvA1z0Gr/KXv3vDjH+Azo7gS1biSw4Onn89wnc7uqHDAfzk6EA/nzI8HtBphqoE//AA+h7I7pnR+8J+PjxitXJ+/nybSsSJh3H+EWD0HeB3FoUfO7T//PQSagL/efcdSnEovIwQeQBlJfBKtXkPD2Lszk4G7zKR9uF6P41qAFT8sU0htDZ7HF//MZZY/fVCanE8H+7vILZA78NaCujlvzMNSbV5+8zOz8+pcb6+Pj/fX83BNUH2Kohw3tDF8RF5dfAYvPju08updXYtQhrmra7yh9LVq0kktFdtjINQI7E/XmFv4EUrU8+vpRYB0vnbDDpnvgJGIqGwYxH8SVlv/ngVdjT++PegAywIWjoaf6ZX/I+XU79h0E//KHRCMsORepWj37yB3eLz74PmmvY7Gn5IXQquWMVefBD/YAfxNzH/9K7P9/cZuPmKg/D+6uo+xhH4JmIvDHlv8CjEE/u/ifmndwXRjgW9fWWrYBT1mMuT+0l2IEdNLhH2M+2ufz3+Juaf3rmAtCNfghtAQ6q5Vmk8KvO4nsaxhNLT+PPL0viroR3aRktePwzuHmGC8sgKpgSlnIj5Y5Gi+I3gEcidP0Bp9XD3+5ABenBLqmauNnIMvru6f/vw/HBPxdPPxyec9DwOrlnOpE+lf+ZW968HTzgaenqkz/2d5lGavLsbQArn6j7HdH9HM+PHh5+KgFdSUKA8GbM2NgV6fBCF1m83T0/2j1rt9PMukEGrBI0Fys9/yox6+v4f/9//F6D/X7F/of+F/hf6X+j/j6D/F0IUQO0FSmtNAAAAAElFTkSuQmCC"/>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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"/>
+  <title>Kiteboarding Wind Watch v7.0 — Charleston, SC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+    :root {
+      --deep:#060e1c; --water:#0c3d6b; --foam:#c8f0ff;
+      --kite:#f5a623; --wind:#4fc8e8; --good:#3de8a0;
+      --alert:#ff6b35; --calm:#556677; --text:#e8f4ff; --sub:#7090a8;
+      --border:rgba(79,200,232,0.18); --cell-w:44px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--deep);color:var(--text);font-family:"Space Grotesk",sans-serif;min-height:100vh;position:relative}
+
+    /* ── FULLSCREEN PARTICLE CANVAS (TOP layer when on — flows over content) ── */
+    #fullscreen-canvas{
+      position:fixed;inset:0;width:100%;height:100%;
+      pointer-events:none;z-index:9998;
+      opacity:0;transition:opacity .5s;
+    }
+    body.particles-full #fullscreen-canvas{opacity:1}
+    body:not(.particles-full) #fullscreen-canvas{display:none}
+
+    /* content sits above canvas */
+    .container{max-width:1280px;width:100%;margin:0 auto;padding:8px 16px 60px;position:relative;z-index:2;background:transparent}
+
+    header{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+    .kite-icon svg{width:40px;height:40px;display:block}
+    header h1{line-height:1.1}
+    .kite-icon{font-size:2.2rem;animation:sway 4s ease-in-out infinite}
+    @keyframes sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+    h1{font-size:clamp(1.3rem,4vw,1.8rem);font-weight:700;color:var(--foam)}
+    h1 span{color:var(--kite)}
+    .subtitle{font-size:.68rem;color:var(--sub);font-family:"Space Mono",monospace;letter-spacing:.08em;text-transform:uppercase;margin-top:0;line-height:1.2}
+
+    .station-tabs{display:flex;gap:10px;flex-wrap:wrap}
+    .station-region{margin-bottom:14px}
+    .station-region:last-child{margin-bottom:20px}
+    .region-label{
+      font-size:.62rem;font-family:"Space Mono",monospace;letter-spacing:.12em;
+      text-transform:uppercase;color:var(--sub);margin-bottom:6px;padding-left:4px;
+    }
+    .station-tab{padding:8px 16px;border-radius:8px;border:1px solid var(--border);background:rgba(6,14,28,.7);color:var(--sub);font-family:"Space Grotesk",sans-serif;font-size:.82rem;cursor:pointer;transition:all .2s}
+    .station-tab.active{background:var(--water);border-color:var(--wind);color:var(--wind)}
+    /* v2.7: all spots on one scrolling line */
+    .station-bar{display:flex;flex-wrap:nowrap;align-items:center;gap:5px;overflow-x:auto;overflow-y:hidden;margin-bottom:6px;padding:0 0 4px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:rgba(79,200,232,.3) transparent}
+    .station-bar::-webkit-scrollbar{height:4px}
+    .station-bar::-webkit-scrollbar-thumb{background:rgba(79,200,232,.3);border-radius:2px}
+    .station-bar .region-label{flex:0 0 auto;margin:0 0 0 8px;padding:0 0 0 10px;border-left:1px solid var(--border);font-size:.54rem;letter-spacing:.08em;white-space:nowrap}
+    .station-bar .region-label:first-child{margin-left:0;padding-left:0;border-left:none}
+    .station-toggle{flex:0 0 auto;margin-left:auto;padding:5px 10px;font-family:"Space Grotesk",sans-serif;font-size:.72rem;border-radius:6px;border:1px solid var(--border);background:rgba(6,14,28,.7);color:var(--sub);cursor:pointer;white-space:nowrap;transition:all .2s}
+    .station-toggle:hover{border-color:var(--wind);color:var(--wind)}
+    .station-toggle.has-active{background:var(--water);border-color:var(--wind);color:var(--wind)}
+    .station-toggle .more-caret{display:inline-block;transition:transform .2s}
+    .station-toggle.open .more-caret{transform:rotate(90deg)}
+    .more-panel{display:none;margin:-2px 0 8px;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:rgba(6,14,28,.85);flex-direction:column;gap:10px}
+    .more-panel.open{display:flex}
+    .more-group{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+    .more-group .region-label{margin:0 6px 0 0;min-width:130px;padding:0}
+    .more-panel .station-tab{padding:5px 9px;font-size:.72rem;border-radius:6px;white-space:nowrap}
+    .station-bar .station-tab{flex:0 0 auto;padding:5px 9px;font-size:.72rem;border-radius:6px;white-space:nowrap}
+
+    .top-grid{display:flex;flex-wrap:nowrap;align-items:stretch;gap:12px;margin-bottom:12px}
+    .top-grid>.live-card,.top-grid>.map-card{flex:1 1 0;min-width:200px}
+
+    /* live card */
+    .live-card{position:relative;background:linear-gradient(135deg,rgba(12,61,107,.92) 0%,rgba(6,14,28,.88) 100%);border:1px solid var(--border);border-radius:14px;padding:8px 22px 6px;}
+    body.particles-full .live-card{background:linear-gradient(135deg,rgba(12,61,107,.97) 0%,rgba(6,14,28,.96) 100%)}
+    .card-label{font-size:.68rem;font-family:"Space Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--wind);margin-bottom:0}
+    .live-speed{font-size:clamp(3rem,10vw,4.5rem);font-family:"Space Mono",monospace;font-weight:700;line-height:.82;margin:6px 0 4px;transition:color .5s}
+    .live-speed.kite-epic,.live-speed.kite-on{color:var(--good)}
+    .live-speed.kite-ok{color:var(--kite)}
+    .live-speed.kite-off{color:var(--calm)}
+    .live-unit{font-size:1rem;color:var(--sub);margin-left:3px}
+    .live-row{display:flex;gap:20px;margin-top:0;flex-wrap:wrap}
+    .live-stat label{font-size:.68rem;color:var(--sub);display:block}
+    .live-stat span{font-size:1rem;font-family:"Space Mono",monospace;color:var(--foam)}
+    .status-bar{margin-top:6px;padding-top:6px;border-top:1px solid var(--border);display:flex;align-items:center;gap:5px;line-height:1.2;font-size:.88rem;font-weight:500}
+    .status-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+    #session-rec{margin-top:6px;padding-top:6px;border-top:1px solid var(--border);font-size:.82rem;line-height:1.55;color:var(--foam)}
+    #session-rec .rec-label{font-size:.62rem;font-family:"Space Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--sub);margin-bottom:5px}
+    #session-rec .rec-line{display:flex;align-items:flex-start;gap:7px;margin-bottom:3px}
+    #session-rec .rec-line:last-child{margin-bottom:0}
+    #session-rec .rec-bullet{flex-shrink:0;margin-top:2px}
+
+    /* MAP */
+    .map-card{border:1px solid var(--border);border-radius:14px;overflow:hidden;position:relative;min-height:220px;contain:layout paint}
+    #map-container{position:absolute;inset:0;width:100%;height:100%}
+    #leaflet-map{position:absolute;inset:0;width:100%;height:100%}
+    #map-particle-canvas{
+      position:absolute;inset:0;width:100%;height:100%;
+      pointer-events:none;z-index:650;
+    }
+    /* when fullscreen mode is on, hide map canvas so we don't double-draw */
+    body.particles-full #map-particle-canvas{opacity:0}
+
+    .leaflet-control-attribution{display:none!important}
+    .map-overlay{
+      position:absolute;bottom:8px;left:8px;z-index:1001;
+      background:rgba(6,14,28,.88);border:1px solid var(--border);
+      border-radius:8px;padding:5px 10px;font-size:.7rem;
+      font-family:"Space Mono",monospace;color:var(--sub);pointer-events:none;
+    }
+    .map-hint{
+      position:absolute;top:8px;right:8px;z-index:1001;
+      background:rgba(6,14,28,.7);border:1px solid var(--border);
+      border-radius:6px;padding:3px 8px;font-size:.62rem;
+      font-family:"Space Mono",monospace;color:var(--sub);
+      pointer-events:none;opacity:.6;
+    }
+
+    /* ── PARTICLE TOGGLE BUTTON ── */
+    #particle-toggle{
+      position:fixed;bottom:20px;right:20px;z-index:9999;
+      background:rgba(6,14,28,.92);border:1px solid var(--border);
+      border-radius:10px;padding:8px 14px;
+      font-family:"Space Mono",monospace;font-size:.72rem;
+      color:var(--sub);cursor:pointer;
+      display:flex;align-items:center;gap:7px;
+      transition:all .2s;
+    }
+    #particle-toggle:hover{border-color:var(--wind);color:var(--wind)}
+    #particle-toggle.active{border-color:var(--wind);color:var(--wind);background:rgba(12,61,107,.7)}
+    #particle-toggle .pt-dot{
+      width:8px;height:8px;border-radius:50%;
+      background:var(--calm);transition:background .3s;
+      animation:none;
+    }
+    #particle-toggle.active .pt-dot{background:var(--wind);animation:pulse 2s infinite}
+
+    .section-title{font-size:.68rem;font-family:"Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--wind);margin-bottom:6px}
+
+    /* ── WIND CHART ── */
+    .chart-card{border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px;background:rgba(6,14,28,.85);padding:10px 14px 8px}
+    body.particles-full .chart-card{background:rgba(6,14,28,.96)}
+    .chart-wrap{position:relative;height:190px}
+    #tide-card .chart-wrap{height:190px}
+    #tide-card{padding-bottom:2px;margin-bottom:6px}
+    .chart-card .section-title{margin-bottom:6px}
+    .chart-title{flex:0 0 auto;white-space:nowrap}
+    .chart-legend{display:flex;flex-wrap:wrap;gap:3px 12px;flex:1 1 auto;justify-content:center;min-width:0}
+    .lg-item{background:none;border:none;padding:0;color:var(--sub);font-family:"Space Grotesk",sans-serif;font-size:.72rem;text-transform:none;letter-spacing:0;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+    .lg-item:hover{color:var(--foam)}
+    .lg-item.off{opacity:.4;text-decoration:line-through}
+    .chart-ctrl{flex-shrink:0}
+    .chart-card{position:relative;padding-bottom:14px!important}
+    .live-card.rs-h{overflow:hidden}
+    .live-card .fit-hide{display:none!important}
+    @media(max-width:600px){.container{width:auto!important;max-width:none!important;margin:0 auto!important}}
+    #reset-layout{position:fixed;right:14px;bottom:14px;z-index:2000;background:rgba(10,20,36,.92);color:var(--sub);border:1px solid var(--border);border-radius:10px;padding:7px 12px;font:600 .72rem "Space Mono",monospace;letter-spacing:.04em;cursor:pointer;backdrop-filter:blur(6px);transition:color .2s,border-color .2s}
+    #reset-layout:hover{color:var(--wind);border-color:var(--wind)}
+    .rs-corner{position:absolute;right:3px;bottom:3px;width:18px;height:18px;display:flex;align-items:center;justify-content:center;color:var(--sub);opacity:.55;cursor:nwse-resize;touch-action:none;z-index:1100;border-radius:4px;transition:opacity .2s,color .2s}
+    .rs-corner:hover,.rs-corner.on{opacity:1;color:var(--wind)}
+    body.rs-dragging{user-select:none;cursor:nwse-resize}
+    .chart-card.rs-fixed{display:flex;flex-direction:column}
+    .chart-card.rs-fixed .chart-wrap{flex:1 1 0;height:auto!important;min-height:80px}
+    @media(max-width:600px){
+      .rs-corner{display:none}
+      .top-grid{flex-direction:column}
+      .live-card,.map-card,.chart-card,.forecast-wrap{width:auto!important;height:auto!important;flex:none!important;align-self:stretch!important}
+      .map-card{height:240px!important}
+      .chart-card.rs-fixed .chart-wrap{height:190px!important;flex:none!important}
+    }
+    body.rs-dragging{user-select:none;cursor:ns-resize}
+    .chart-head{display:flex;justify-content:space-between;align-items:center;gap:6px 14px;flex-wrap:wrap}
+    .chart-ctrl{display:flex;gap:6px;align-items:center}
+    .chart-btn{background:transparent;border:1px solid var(--border);color:var(--sub);font-family:"Space Mono",monospace;font-size:.72rem;padding:4px 10px;border-radius:6px;cursor:pointer;transition:all .2s;text-transform:none;letter-spacing:0}
+    .chart-btn:hover{border-color:var(--wind);color:var(--wind)}
+    .chart-btn.active{background:rgba(12,61,107,.8);border-color:var(--wind);color:var(--wind)}
+    #wind-chart,#tide-chart{touch-action:pan-y;cursor:crosshair}
+
+    /* forecast */
+    .forecast-wrap{position:relative;border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:20px;background:rgba(6,14,28,.85);}
+    body.particles-full .forecast-wrap{background:rgba(6,14,28,.96)}
+    body.particles-full .section-title{text-shadow:0 0 8px rgba(6,14,28,.9)}
+    .fc-controls{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+    .fc-model-select{background:rgba(12,61,107,.7);border:1px solid var(--border);color:var(--foam);font-family:"Space Mono",monospace;font-size:.8rem;padding:5px 10px;border-radius:6px;cursor:pointer;appearance:none;-webkit-appearance:none;padding-right:22px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%234fc8e8'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center}
+    .fc-interval-btn{background:transparent;border:1px solid var(--border);color:var(--sub);font-family:"Space Mono",monospace;font-size:.78rem;padding:5px 10px;border-radius:6px;cursor:pointer;transition:all .2s}
+    .fc-interval-btn.active{background:rgba(12,61,107,.8);border-color:var(--wind);color:var(--wind)}
+    .fc-title{flex:1;text-align:center;font-size:.8rem;font-family:"Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--wind)}
+    .fc-loading{padding:24px;color:var(--sub);font-size:.85rem;display:flex;align-items:center;gap:10px}
+    .spinner{width:14px;height:14px;border:2px solid var(--border);border-top-color:var(--wind);border-radius:50%;animation:spin .8s linear infinite;flex-shrink:0}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .fc-scroll{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch}
+    .fc-scroll::-webkit-scrollbar{height:4px}
+    .fc-scroll::-webkit-scrollbar-track{background:rgba(255,255,255,.04)}
+    .fc-scroll::-webkit-scrollbar-thumb{background:rgba(79,200,232,.3);border-radius:2px}
+    .fc-row{display:flex;align-items:stretch;border-bottom:1px solid rgba(79,200,232,.07)}
+    .fc-row:last-child{border-bottom:none}
+    .fc-row-label{width:62px;min-width:62px;padding:4px 8px;display:flex;align-items:center;font-size:.65rem;color:var(--sub);font-family:"Space Mono",monospace;border-right:1px solid var(--border);background:rgba(6,14,28,.95);position:sticky;left:0;z-index:2;white-space:nowrap;flex-shrink:0}
+    .fc-row.day-header{background:rgba(10,22,40,.9);border-bottom:1px solid var(--border)}
+    .fc-row.day-header .fc-row-label{color:transparent;border-right-color:transparent}
+    .fc-day-cell{display:flex;align-items:center;justify-content:center;font-size:.7rem;font-family:"Space Mono",monospace;font-weight:700;color:var(--foam);letter-spacing:.06em;border-right:1px solid var(--border);background:rgba(10,22,40,.9);padding:6px 0}
+    .fc-day-cell:last-child{border-right:none}
+    .fc-cell{width:var(--cell-w);min-width:var(--cell-w);display:flex;align-items:center;justify-content:center;font-size:.8rem;font-family:"Space Mono",monospace;padding:3px 2px;text-align:center;border-right:1px solid rgba(79,200,232,.06);position:relative}
+    .fc-cell:last-child{border-right:none}
+    .fc-cell.night{background:rgba(0,0,0,.25)}
+    .fc-cell.day-sep,.fc-day-cell.day-sep{border-right:1px solid rgba(79,200,232,.3)!important}
+    .kt-cell{font-weight:700;border-radius:3px;padding:2px 3px;min-width:30px;text-align:center;font-size:.8rem}
+    .kt-epic{background:#1a4a2e;color:#3de8a0}
+    .kt-on  {background:#1a3d28;color:#3de8a0}
+    .kt-ok  {background:#3d2e00;color:#f5a623}
+    .kt-off {background:transparent;color:var(--sub)}
+    .fc-row.gust-row .kt-cell{opacity:.82}
+    .temp-cell{padding:2px 3px;font-size:.8rem;font-weight:500;color:var(--foam)}
+    .cloud-bar{width:34px;height:8px;border-radius:3px;background:rgba(200,200,220,.1)}
+    .cloud-fill{height:100%;border-radius:3px;background:rgba(180,190,210,.5)}
+    .rain-cell{font-size:.72rem;color:#7aa8c4}
+    .fc-now-marker{position:absolute;top:0;bottom:0;left:0;width:2px;background:var(--wind);opacity:.7;pointer-events:none;z-index:3}
+
+    footer{margin-top:8px;font-size:.68rem;color:var(--sub);font-family:"Space Mono",monospace;text-align:center;line-height:1.9;position:relative;z-index:2}
+    footer a{color:var(--wind);text-decoration:none}
+
+    /* ── EMAIL ALERTS ── */
+    .alert-card{border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:20px;background:rgba(6,14,28,.92);}
+    body.particles-full .alert-card{background:rgba(6,14,28,.97)}
+    .alert-header{display:flex;align-items:center;gap:12px;padding:14px 18px;cursor:pointer;user-select:none;transition:background .2s}
+    .alert-header:hover{background:rgba(79,200,232,0.05)}
+    .alert-icon{font-size:1.4rem}
+    .alert-status{flex:1}
+    .alert-title{font-size:.92rem;font-weight:600;color:var(--foam)}
+    .alert-summary{font-size:.7rem;color:var(--sub);font-family:"Space Mono",monospace;margin-top:2px}
+    .alert-toggle{color:var(--sub);font-size:.85rem;transition:transform .2s}
+    .alert-card.open .alert-toggle{transform:rotate(180deg)}
+    .alert-body{padding:0 18px 18px;border-top:1px solid var(--border)}
+    .alert-row{display:flex;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+    .alert-row label{flex:0 0 180px;font-size:.78rem;color:var(--sub);font-family:"Space Mono",monospace}
+    .alert-row input,.alert-row select{
+      background:rgba(12,61,107,.5);border:1px solid var(--border);color:var(--foam);
+      font-family:"Space Mono",monospace;font-size:.82rem;padding:6px 10px;border-radius:6px;
+      flex:1;min-width:140px;
+    }
+    .alert-row input:focus,.alert-row select:focus{outline:none;border-color:var(--wind)}
+    .alert-row input[type=number]{max-width:120px;flex:0 0 auto}
+    .alert-row.inline-dir input{max-width:80px}
+    .alert-actions{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+    .alert-btn{
+      background:rgba(12,61,107,.6);border:1px solid var(--border);color:var(--foam);
+      font-family:"Space Grotesk",sans-serif;font-size:.82rem;font-weight:500;
+      padding:8px 16px;border-radius:8px;cursor:pointer;transition:all .2s;
+    }
+    .alert-btn:hover{border-color:var(--wind);color:var(--wind)}
+    .alert-btn.primary{background:var(--water);border-color:var(--wind);color:var(--wind)}
+    .alert-btn.primary:hover{background:rgba(12,61,107,.9)}
+    .alert-btn.danger:hover{border-color:var(--alert);color:var(--alert)}
+    .alert-result{margin-top:14px;padding:12px 14px;border-radius:8px;font-size:.82rem;display:none}
+    .alert-result.success{background:rgba(61,232,160,.08);border:1px solid rgba(61,232,160,.3);color:var(--good)}
+    .alert-result.error{background:rgba(255,107,53,.08);border:1px solid rgba(255,107,53,.3);color:var(--alert)}
+    .alert-result.info{background:rgba(79,200,232,.06);border:1px solid var(--border);color:var(--foam)}
+    .alert-result pre{font-family:"Space Mono",monospace;margin-top:8px;color:var(--foam);background:rgba(0,0,0,.3);padding:10px;border-radius:6px}
+  </style>
+</head>
+<body>
+
+<!-- Fullscreen wind particle canvas — sits behind all content -->
+<canvas id="fullscreen-canvas"></canvas>
+
+<!-- Toggle button — always visible -->
+<button id="particle-toggle" title="Toggle fullscreen wind particles">
+  <span class="pt-dot"></span>
+  <span id="pt-label">wind overlay: off</span>
+</button>
+
+<div class="container">
+  <header>
+    <div class="kite-icon" aria-hidden="true">
+      <svg width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+        <!-- kite -->
+        <path d="M30 7 Q40 3 50 9 Q44 14 38 14 Q33 14 30 7 Z" fill="#f5a623" stroke="#fff" stroke-width="1"/>
+        <line x1="40" y1="9" x2="40" y2="14" stroke="#fff" stroke-width=".6" opacity=".6"/>
+        <!-- lines to bar -->
+        <line x1="32" y1="10" x2="20" y2="27" stroke="#e8f4ff" stroke-width=".7" opacity=".6"/>
+        <line x1="44" y1="13" x2="23" y2="27" stroke="#e8f4ff" stroke-width=".7" opacity=".6"/>
+        <!-- rider -->
+        <line x1="18" y1="27" x2="26" y2="27" stroke="#e8f4ff" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="20" y1="27" x2="17" y2="35" stroke="#e8f4ff" stroke-width="2" stroke-linecap="round"/>
+        <line x1="24" y1="27" x2="21" y2="35" stroke="#e8f4ff" stroke-width="2" stroke-linecap="round"/>
+        <line x1="19" y1="35" x2="19" y2="42" stroke="#e8f4ff" stroke-width="2.6" stroke-linecap="round"/>
+        <line x1="19" y1="42" x2="16" y2="48" stroke="#e8f4ff" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="19" y1="42" x2="23" y2="48" stroke="#e8f4ff" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="18" cy="31" r="2.4" fill="#e8f4ff"/>
+        <!-- board + wake -->
+        <ellipse cx="19.5" cy="50" rx="11" ry="2.2" fill="#4fc8e8" stroke="#e8f4ff" stroke-width=".6"/>
+        <path d="M8 50 Q2 51 -2 50" stroke="#c8f0ff" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".7" transform="translate(0,0)"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Kiteboarding Wind <span>Watch</span></h1>
+      <div class="subtitle" id="subtitle">v7.0 · Multi-location wind watch</div>
+    </div>
+  
+  </header>
+
+  <div class="station-bar" id="station-bar">
+    <span class="region-label">Charleston</span>
+    <button class="station-tab active" data-station="8665494" title="Sullivan's Is. Station 28½">Sullivan's 28½</button>
+    <button class="station-tab" data-station="8665530" title="Fort Sumter">Fort Sumter</button>
+    <button class="station-tab" data-station="folly_north" title="Folly Beach — North Side">Folly N</button>
+    <button class="station-tab" data-station="lighthouse" title="Lighthouse">Lighthouse</button>
+    <button class="station-tab" data-station="folly_south" title="Folly Beach — South Side">Folly S</button>
+    <button class="station-toggle" id="more-toggle" type="button" aria-expanded="false" aria-controls="more-panel">California <span class="more-caret">▸</span></button>
+  </div>
+  <div class="more-panel" id="more-panel">
+    <div class="more-group"><span class="region-label">Tahoe</span>
+      <button class="station-tab" data-station="nevada_beach" title="Nevada Beach">Nevada Beach</button>
+      <button class="station-tab" data-station="incline_beach" title="Incline Beach">Incline Beach</button>
+    </div>
+    <div class="more-group"><span class="region-label">Washoe Lake</span>
+      <button class="station-tab" data-station="washoe_south" title="Washoe Lake — South End">South End</button>
+      <button class="station-tab" data-station="washoe_north" title="Washoe Lake — North End">North End</button>
+    </div>
+    <div class="more-group"><span class="region-label">California — Kite</span>
+      <button class="station-tab" data-station="crissy_field" title="Crissy Field">Crissy Field</button>
+      <button class="station-tab" data-station="ocean_beach_sf" title="Ocean Beach (SF)">Ocean Beach</button>
+      <button class="station-tab" data-station="third_ave" title="3rd Ave (Upper Launch)">3rd Ave</button>
+      <button class="station-tab" data-station="sherman_island" title="Sherman Island">Sherman Island</button>
+      <button class="station-tab" data-station="waddell" title="Waddell">Waddell</button>
+    </div>
+    <div class="more-group"><span class="region-label">California — Paragliding</span>
+      <button class="station-tab" data-station="mussel_rock" title="Mussel Rock">Mussel Rock</button>
+      <button class="station-tab" data-station="ft_funston" title="Ft Funston">Ft Funston</button>
+    </div>
+  </div>
+
+  <div class="top-grid">
+    <div class="live-card">
+      <div class="card-label">🟢 Live Observation</div>
+      <div id="live-speed" class="live-speed kite-off">–<span class="live-unit">kt</span></div>
+      <div class="live-row">
+        <div class="live-stat"><label>Direction</label><span id="live-dir">–</span></div>
+        <div class="live-stat"><label>Gust</label><span id="live-gust">– kt</span></div>
+        <div class="live-stat"><label>Updated</label><span id="live-time">–</span></div>
+      </div>
+      <div class="status-bar">
+        <div id="status-dot" class="status-dot" style="background:var(--calm)"></div>
+        <span id="status-text">Loading…</span>
+      </div>
+      <div id="session-rec" style="display:none">
+        <div class="rec-label">📋 Session Outlook</div>
+        <div id="session-rec-lines"></div>
+      </div>
+    </div>
+    <div class="map-card">
+      <div id="map-container">
+        <div id="leaflet-map"></div>
+        <canvas id="map-particle-canvas"></canvas>
+      </div>
+      <div class="map-overlay" id="map-label">Loading…</div>
+      <div class="map-overlay" id="coord-display" style="display:none;bottom:8px;right:8px;left:auto;color:var(--wind)">📍 –</div>
+      <div class="map-hint">click map to place marker</div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="section-title chart-head">
+      <div class="chart-title">💨 <span id="chart-hours-label">48</span>-Hour Wind Forecast</div>
+      <div class="chart-legend" id="chart-legend"></div>
+      <div class="chart-ctrl">
+        <button class="chart-btn" id="hl-clear" type="button" style="display:none">Clear highlights</button>
+        <button class="chart-btn" data-chart-hrs="24" type="button">24h</button>
+        <button class="chart-btn active" data-chart-hrs="48" type="button">48h</button>
+      </div>
+    </div>
+    <div class="chart-wrap">
+      <canvas id="wind-chart"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-card" id="tide-card" style="display:none">
+    <div class="section-title">🌊 Tide Predictions — <span id="tide-station-label">–</span></div>
+    <div class="chart-wrap">
+      <canvas id="tide-chart"></canvas>
+    </div>
+  </div>
+
+  <div class="forecast-wrap">
+    <div class="fc-controls">
+      <select id="fc-model" class="fc-model-select">
+        <option value="best_match">HRRR / Best</option>
+        <option value="gfs_seamless">GFS</option>
+        <option value="ecmwf_ifs025">ECMWF</option>
+        <option value="nam_conus">NAM</option>
+      </select>
+      <button class="fc-interval-btn" data-hrs="3">3h</button>
+      <button class="fc-interval-btn active" data-hrs="1">1h</button>
+      <span class="fc-title">Hourly Wind Forecast</span>
+      <span style="margin-left:auto;font-size:.68rem;color:var(--sub);font-family:'Space Mono',monospace" id="fc-updated"></span>
+    </div>
+    <div id="fc-loading" class="fc-loading"><div class="spinner"></div>Loading forecast…</div>
+    <div id="fc-table-wrap" style="display:none">
+      <div class="fc-scroll" id="fc-scroll">
+        <div id="fc-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">🔔 Email Alerts</div>
+  <div class="alert-card" id="alert-card">
+    <div class="alert-header" id="alert-header">
+      <div class="alert-icon">🪁</div>
+      <div class="alert-status">
+        <div class="alert-title">Wind Alert</div>
+        <div class="alert-summary" id="alert-summary">Not configured · click to set up</div>
+      </div>
+      <div class="alert-toggle">▼</div>
+    </div>
+    <div class="alert-body" id="alert-body" style="display:none">
+      <div class="alert-row">
+        <label>Notify via</label>
+        <select id="alert-type">
+          <option value="email">Email</option>
+          <option value="sms">Text (SMS)</option>
+        </select>
+      </div>
+      <div class="alert-row" id="alert-email-row">
+        <label>Email address</label>
+        <input type="email" id="alert-email" placeholder="you@example.com">
+      </div>
+      <div class="alert-row" id="alert-phone-row" style="display:none">
+        <label>Phone number (10 digits)</label>
+        <input type="tel" id="alert-phone" placeholder="5551234567" maxlength="14">
+      </div>
+      <div class="alert-row" id="alert-carrier-row" style="display:none">
+        <label>Carrier</label>
+        <select id="alert-carrier">
+          <option value="tmobile" selected>T-Mobile</option>
+          <option value="verizon">Verizon</option>
+          <option value="att">AT&amp;T</option>
+          <option value="cricket">Cricket</option>
+          <option value="boost">Boost Mobile</option>
+        </select>
+      </div>
+      <div class="alert-row">
+        <label>Min sustained (kt)</label>
+        <input type="number" id="alert-min-sustained" value="12" min="0" max="50">
+      </div>
+      <div class="alert-row">
+        <label>Min gust (kt, optional)</label>
+        <input type="number" id="alert-min-gust" value="" min="0" max="60" placeholder="any">
+      </div>
+      <div class="alert-row">
+        <label>Direction preference</label>
+        <select id="alert-direction">
+          <option value="any">Any direction</option>
+          <option value="onshore">Onshore (E/SE/S — safest)</option>
+          <option value="cross">Cross-shore (NE or SW)</option>
+          <option value="custom">Custom range…</option>
+        </select>
+      </div>
+      <div class="alert-row inline-dir" id="alert-custom-dir" style="display:none">
+        <label>Custom range (°)</label>
+        <input type="number" id="alert-dir-from" min="0" max="360" value="135">
+        <span style="color:var(--sub)">to</span>
+        <input type="number" id="alert-dir-to" min="0" max="360" value="225">
+      </div>
+      <div class="alert-row">
+        <label>Time window</label>
+        <select id="alert-window">
+          <option value="next24h">Next 24 hours</option>
+          <option value="next3days">Next 3 days</option>
+          <option value="weekends">Weekends only (next 7 days)</option>
+        </select>
+      </div>
+      <div class="alert-row">
+        <label>Cooldown (hrs)</label>
+        <input type="number" id="alert-cooldown" value="6" min="1" max="48">
+      </div>
+      <div class="alert-actions">
+        <button id="alert-save" class="alert-btn primary">Save Alert</button>
+        <button id="alert-test" class="alert-btn">Test Against Current Forecast</button>
+        <button id="alert-send-test" class="alert-btn">📨 Send Test Message</button>
+        <button id="alert-clear" class="alert-btn danger">Clear</button>
+      </div>
+      <div id="alert-result" class="alert-result"></div>
+    </div>
+  </div>
+
+  <footer>
+    Live: <a href="https://tidesandcurrents.noaa.gov" target="_blank">NOAA CO-OPS</a> &nbsp;·&nbsp;
+    Forecast: <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> &nbsp;·&nbsp;
+    Refreshes every 6 min &nbsp;·&nbsp; Last: <span id="last-refresh">–</span>
+  </footer>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════
+// CONFIG
+// Station 28.5 on Sullivan's Island: NOAA uses 8665494 (IOP Pier) as the
+// closest official station; the marker is placed at the actual beach coordinates
+// ═══════════════════════════════════════════════
+const STATIONS = {
+  '8665494': {
+    name:"Sullivan's Is. Station 28½", lat:32.76498, lon:-79.82005,
+    source:'noaa', timezone:'America/New_York', region:"Charleston, SC",
+    // 8665494 is a wind-only station; use Charleston Harbor (Cooper River Entrance)
+    // for tide predictions — same tidal cycle, ~5 miles apart.
+    tides:{ stationId:'8665530', label:'Charleston Harbor' },
+  },
+  '8665530': {
+    name:'Fort Sumter / Charleston',   lat:32.75797, lon:-79.86001,
+    source:'noaa', timezone:'America/New_York', region:"Charleston, SC",
+    tides:{ stationId:'8665530' },
+  },
+  // Folly Beach north side + Lighthouse (north tip) — coordinates set from map clicks
+  'folly_north': {
+    name:'Folly Beach — North Side',  lat:32.68027, lon:-79.89026,
+    source:'openmeteo', timezone:'America/New_York', region:"Charleston, SC",
+    tides:{ stationId:'8665530', label:'Charleston Harbor' },
+  },
+  'folly_south': {
+    name:'Folly Beach — South Side',  lat:32.63959, lon:-79.96897,
+    source:'openmeteo', timezone:'America/New_York', region:"Charleston, SC",
+    tides:{ stationId:'8665530', label:'Charleston Harbor' },
+  },
+  'lighthouse': {
+    name:'Lighthouse',                 lat:32.68537, lon:-79.88571,
+    source:'openmeteo', timezone:'America/New_York', region:"Charleston, SC",
+    tides:{ stationId:'8665530', label:'Charleston Harbor' },
+  },
+  'nevada_beach': {
+    name:'Nevada Beach',               lat:38.97683, lon:-119.95427,
+    source:'openmeteo', timezone:'America/Los_Angeles', region:"Lake Tahoe",
+  },
+  'incline_beach': {
+    name:'Incline Beach',              lat:39.23608, lon:-119.94302,
+    source:'openmeteo', timezone:'America/Los_Angeles', region:"Lake Tahoe",
+  },
+  // ─── Washoe Lake, NV ───
+  'washoe_south': {
+    name:'Washoe Lake — South End',    lat:39.2432,  lon:-119.7768,
+    source:'openmeteo', timezone:'America/Los_Angeles', region:"Washoe Lake, NV",
+  },
+  'washoe_north': {
+    name:'Washoe Lake — North End',    lat:39.32708, lon:-119.79557,
+    source:'openmeteo', timezone:'America/Los_Angeles', region:"Washoe Lake, NV",
+  },
+  // ─── California — kite spots ───
+  'crissy_field': {
+    name:'Crissy Field',               lat:37.80743, lon:-122.46617,
+    source:'openmeteo', timezone:'America/Los_Angeles', region:"California — Kite",
+  },
+  'ocean_beach_sf': {
+    name:'Ocean Beach (SF)',           lat:37.75903, lon:-122.51266,
+    source:'openmeteo', timezone:'America/Los_Angeles', region:"California — Kite",
+  },
+  'third_ave': {
+    name:'3rd Ave (Upper Launch)',     lat:37.57454, lon:-122.28358,
+    source:'openmeteo', timezone:'America/Los_Angeles', region:"California — Kite",
+  },
+  'sherman_island': {
+    name:'Sherman Island',             lat:38.0393, lon:-121.8218,
+    source:'openmeteo', timezone:'America/Los_Angeles', region:"California — Kite",
+  },
+  'waddell': {
+    name:'Waddell',                    lat:37.0947, lon:-122.2777,
+    source:'openmeteo', timezone:'America/Los_Angeles', region:"California — Kite",
+  },
+  // ─── California — paragliding ───
+  'mussel_rock': {
+    name:'Mussel Rock',                lat:37.6708, lon:-122.4917,
+    source:'openmeteo', timezone:'America/Los_Angeles', region:"California — Paragliding",
+    sport:'paragliding',
+  },
+  'ft_funston': {
+    name:'Ft Funston',                 lat:37.7161, lon:-122.5030,
+    source:'openmeteo', timezone:'America/Los_Angeles', region:"California — Paragliding",
+    sport:'paragliding',
+  },
+};
+// Map centers — slightly offset so station marker is centered in the card
+const MAP_CENTERS = {
+  '8665494':      { lat:32.76498, lon:-79.82005, zoom:13 },
+  '8665530':      { lat:32.75797, lon:-79.86001, zoom:13 },
+  'folly_north':  { lat:32.68027, lon:-79.89026, zoom:14 },
+  'lighthouse':   { lat:32.68537, lon:-79.88571, zoom:14 },
+  'folly_south':  { lat:32.63959, lon:-79.96897, zoom:14 },
+  'nevada_beach': { lat:38.97683, lon:-119.95427, zoom:13 },
+  'incline_beach':{ lat:39.23608, lon:-119.94302, zoom:13 },
+  'washoe_south':   { lat:39.2432,  lon:-119.7768, zoom:12 },
+  'washoe_north':   { lat:39.32708, lon:-119.79557, zoom:12 },
+  // California
+  'crissy_field':  { lat:37.8034,  lon:-122.4661, zoom:13 },
+  'ocean_beach_sf':{ lat:37.7594,  lon:-122.5107, zoom:13 },
+  'third_ave':     { lat:37.57454, lon:-122.28358, zoom:13 },
+  'sherman_island':{ lat:38.0393,  lon:-121.8218, zoom:11 },
+  'waddell':       { lat:37.0947,  lon:-122.2777, zoom:13 },
+  'mussel_rock':   { lat:37.6708,  lon:-122.4917, zoom:13 },
+  'ft_funston':    { lat:37.7161,  lon:-122.5030, zoom:13 },
+};
+let activeStation = '8665494';
+let fcInterval    = 1;
+let fcModel       = 'best_match';
+let particleFullscreen = false;
+
+// ═══════════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════════
+const speedClass  = kt => kt>=20?'kite-epic':kt>=15?'kite-on':kt>=12?'kite-ok':'kite-off';
+const speedColor  = kt => kt>=15?'#3de8a0':kt>=12?'#f5a623':'#556677';
+const ktCellClass = kt => kt>=20?'kt-epic':kt>=15?'kt-on':kt>=12?'kt-ok':'kt-off';
+const statusMsg   = kt => {
+  if(kt>=20) return '🔥 Epic kite conditions!';
+  if(kt>=15) return '✅ Good kite wind — conditions on.';
+  if(kt>=12) return '🟡 Marginal — borderline kite wind.';
+  if(kt>=6)  return '💤 Not enough wind for kiting.';
+  return '🪨 Calm. Try again later.';
+};
+
+// ═══════════════════════════════════════════════
+// PARTICLE ENGINE — shared, draws to any canvas
+// ═══════════════════════════════════════════════
+const TRAIL_LEN    = 14;
+const NUM_PARTICLES = 280;
+let windState = { dirDeg:135, speedKt:14 };
+let animId    = null;
+
+// Two particle pools — one for map canvas, one for fullscreen
+const mapParticles  = [];
+const fullParticles = [];
+
+const fsCanvas  = document.getElementById('fullscreen-canvas');
+const fsCtx     = fsCanvas.getContext('2d');
+const mapCanvas = document.getElementById('map-particle-canvas');
+const mapCtx    = mapCanvas.getContext('2d');
+
+function mkParticle(w, h, scatter) {
+  return {
+    x: Math.random()*w,
+    y: Math.random()*h,
+    age: scatter ? Math.floor(Math.random()*TRAIL_LEN*20) : 0,
+    // long lifespan so particles can travel across the full canvas at slow speed
+    maxAge: TRAIL_LEN*30 + Math.random()*TRAIL_LEN*30,
+    speed: 0.5 + Math.random()*0.5,
+    history: [],
+  };
+}
+
+function initPool(pool, w, h, n) {
+  pool.length = 0;
+  for(let i=0;i<n;i++) pool.push(mkParticle(w, h, true));
+}
+
+function syncCanvases() {
+  const mc = document.getElementById('map-container');
+  if(mc) {
+    const rect = mc.getBoundingClientRect();
+    // Use bounding rect (more reliable than clientWidth during transitions)
+    const w = Math.round(rect.width), h = Math.round(rect.height);
+    if (mapCanvas.width !== w)  mapCanvas.width  = w;
+    if (mapCanvas.height !== h) mapCanvas.height = h;
+  }
+  if (fsCanvas.width  !== window.innerWidth)  fsCanvas.width  = window.innerWidth;
+  if (fsCanvas.height !== window.innerHeight) fsCanvas.height = window.innerHeight;
+}
+
+// Mobile detection — used to boost particle opacity since sunlight readability is harder
+const IS_MOBILE = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || window.innerWidth < 768;
+
+function stepPool(pool, ctx, w, h) {
+  if(!w||!h) return;
+  ctx.clearRect(0,0,w,h);
+
+  const toRad = (windState.dirDeg+180)*Math.PI/180;
+  const vx = Math.sin(toRad);
+  const vy = -Math.cos(toRad);
+  const kt  = windState.speedKt;
+  // slow, drift-like speed: max ~1.0 at 20kt, ~0.25 at dead calm
+  const spd = Math.max(0.22, Math.min(kt/20, 1.0));
+
+  let r,g,b;
+  if(kt>=15)     {r=61; g=232;b=160;}
+  else if(kt>=12){r=245;g=166;b=35; }
+  else           {r=100;g=200;b=232;}
+
+  // Mobile screens (esp. outdoor sunlight) need higher opacity to read clearly.
+  const alphaMult = IS_MOBILE ? 1.5 : 1.0;
+
+  pool.forEach((p,idx)=>{
+    const tx=(Math.random()-0.5)*0.4;
+    const ty=(Math.random()-0.5)*0.4;
+    p.x += vx*spd*p.speed + tx;
+    p.y += vy*spd*p.speed + ty;
+    p.age++;
+    p.history.push({x:p.x, y:p.y});
+    if(p.history.length>TRAIL_LEN) p.history.shift();
+
+    const oob = p.x<-20||p.x>w+20||p.y<-20||p.y>h+20;
+    const dead = p.age > p.maxAge;
+    if(oob||dead){
+      const np = mkParticle(w,h,false);
+      // Pure random spawn anywhere on canvas — keeps every region populated
+      np.x = Math.random()*w;
+      np.y = Math.random()*h;
+      np.history=[];
+      pool[idx]=np;
+      return;
+    }
+
+    if(p.history.length<2) return;
+    for(let j=1;j<p.history.length;j++){
+      const frac = j/p.history.length;
+      const lf   = p.age/p.maxAge;
+      const lm   = lf<0.2?lf/0.2:lf>0.72?1-(lf-0.72)/0.28:1.0;
+      const alpha = Math.min(1.0, frac*0.85*lm*alphaMult);
+      ctx.beginPath();
+      ctx.moveTo(p.history[j-1].x, p.history[j-1].y);
+      ctx.lineTo(p.history[j].x,   p.history[j].y);
+      ctx.strokeStyle=`rgba(${r},${g},${b},${alpha.toFixed(2)})`;
+      ctx.lineWidth=1.6;
+      ctx.lineCap='round';
+      ctx.stroke();
+    }
+  });
+}
+
+function loop() {
+  animId = requestAnimationFrame(loop);
+  // Map canvas: always active
+  stepPool(mapParticles, mapCtx, mapCanvas.width, mapCanvas.height);
+  // Fullscreen canvas: only when toggled on
+  if(particleFullscreen) {
+    stepPool(fullParticles, fsCtx, fsCanvas.width, fsCanvas.height);
+  }
+  tickKiteboarder();
+}
+
+function startParticles() {
+  syncCanvases();
+  initPool(mapParticles,  mapCanvas.width||400,  mapCanvas.height||300, NUM_PARTICLES);
+  initPool(fullParticles, fsCanvas.width||window.innerWidth, fsCanvas.height||window.innerHeight, NUM_PARTICLES*2);
+  if(!animId) loop();
+}
+
+function updateParticles(live) {
+  windState.dirDeg  = live.dirDeg;
+  windState.speedKt = live.speedKt;
+}
+
+// ═══════════════════════════════════════════════
+// PARTICLE TOGGLE
+// ═══════════════════════════════════════════════
+const toggleBtn = document.getElementById('particle-toggle');
+const ptLabel   = document.getElementById('pt-label');
+
+toggleBtn.addEventListener('click', () => {
+  particleFullscreen = !particleFullscreen;
+  document.body.classList.toggle('particles-full', particleFullscreen);
+  toggleBtn.classList.toggle('active', particleFullscreen);
+  ptLabel.textContent = particleFullscreen ? 'wind overlay: on' : 'wind overlay: off';
+  if(particleFullscreen) {
+    // reinit full pool to fill screen
+    initPool(fullParticles, fsCanvas.width, fsCanvas.height, NUM_PARTICLES*2);
+  }
+});
+
+// ═══════════════════════════════════════════════
+// SESSION RECOMMENDATION ENGINE
+// ═══════════════════════════════════════════════
+function buildSessionRec(forecastData) {
+  const times=forecastData.hourly.time, spd=forecastData.hourly.windspeed_10m;
+  const gust=forecastData.hourly.windgusts_10m, now=new Date();
+  const buckets=[
+    {label:'morning',start:6,end:11},
+    {label:'midday',start:11,end:15},
+    {label:'afternoon',start:15,end:19},
+    {label:'evening',start:19,end:22},
+  ];
+  const dayMap={};
+  for(let i=0;i<times.length;i++){
+    const t=new Date(times[i]);
+    if(t<now||(t-now)>3*24*3600*1000) continue;
+    const dk=t.toLocaleDateString('en-US',{weekday:'short'});
+    const h=t.getHours();
+    buckets.forEach(b=>{
+      if(h>=b.start&&h<b.end){
+        const key=dk+'|'+b.label;
+        if(!dayMap[key]) dayMap[key]={label:b.label,day:dk,speeds:[],gusts:[]};
+        dayMap[key].speeds.push(spd[i]);
+        dayMap[key].gusts.push(gust[i]);
+      }
+    });
+  }
+  const scored=Object.values(dayMap).map(w=>{
+    const avg=w.speeds.reduce((a,b)=>a+b,0)/w.speeds.length;
+    const maxG=Math.max(...w.gusts);
+    let tier,emoji;
+    if(avg>=18)     {tier='nuking';  emoji='🔥';}
+    else if(avg>=15){tier='on';      emoji='✅';}
+    else if(avg>=12){tier='marginal';emoji='🟡';}
+    else if(avg>=8) {tier='light';   emoji='💨';}
+    else            {tier='flat';    emoji='😴';}
+    return {...w,avg:+avg.toFixed(1),maxG:+maxG.toFixed(1),tier,emoji};
+  });
+  const lines=[];
+  const days=[...new Set(scored.map(s=>s.day))].slice(0,3);
+  days.forEach(day=>{
+    const dw=scored.filter(s=>s.day===day);
+    const on=dw.filter(w=>w.tier==='on'||w.tier==='nuking');
+    const marg=dw.filter(w=>w.tier==='marginal');
+    const flat=dw.filter(w=>w.tier==='flat'||w.tier==='light');
+    const isToday=day===new Date().toLocaleDateString('en-US',{weekday:'short'});
+    const dl=isToday?'Today':day;
+    let msg='';
+    if(on.length>=3){
+      const pk=on.reduce((a,b)=>a.avg>b.avg?a:b);
+      msg=`${dl} looks solid all day — peak ${pk.avg}kt during the ${pk.label}.`;
+    } else if(on.length===2){
+      msg=`${dl} — ${on.map(w=>w.label).join(' and ')} sessions look good (${on[0].avg}–${on[1].avg}kt avg).`;
+    } else if(on.length===1){
+      const w=on[0];
+      msg=`${dl} ${w.label} session looks good — avg ${w.avg}kt, gusts to ${w.maxG}kt.`;
+    } else if(marg.length>=2){
+      msg=`${dl} is marginal throughout — borderline kite wind, watch the gusts.`;
+    } else if(marg.length===1){
+      const w=marg[0];
+      const o=flat[0];
+      msg=o?`${dl} ${w.label} is marginal (${w.avg}kt), ${o.label} looks too light.`:`${dl} ${w.label} is marginal at ${w.avg}kt avg.`;
+    } else if(flat.length>0&&flat[0].tier==='light'){
+      msg=`${dl} — light breeze only, not enough for kiting.`;
+    } else {
+      msg=`${dl} looks flat. Not worth the drive.`;
+    }
+    const nk=dw.find(w=>w.tier==='nuking');
+    if(nk&&on.length<3) msg+=` It's nuking ${nk.label} — ${nk.avg}kt avg.`;
+    lines.push({emoji:on.length>0?on[0].emoji:(marg.length>0?'🟡':'😴'),text:msg});
+  });
+  return lines;
+}
+
+function renderSessionRec(lines) {
+  if(!lines||!lines.length) return;
+  document.getElementById('session-rec-lines').innerHTML=
+    lines.map(l=>`<div class="rec-line"><span class="rec-bullet">${l.emoji}</span><span>${l.text}</span></div>`).join('');
+  document.getElementById('session-rec').style.display='block';
+}
+
+// ═══════════════════════════════════════════════
+// MOCK DATA
+// ═══════════════════════════════════════════════
+function makeMockLive() {
+  const now=new Date();
+  return {speedKt:14.2,gustKt:18.6,dirDeg:135,dirCompass:'SE',
+    time:`${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')} (sample)`,isMock:true};
+}
+function makeMockForecast() {
+  const times=[],spd=[],gust=[],dir=[],temp=[],cloud=[],precip=[];
+  const base=new Date(); base.setMinutes(0,0,0);
+  const pat=[6,7,8,9,11,13,15,16,17,16,14,12,9,7,6,6,7,9,12,14,16,17,16,15,13,11,9,8,7,6,6,7,8,10,13,15,17,18,17,15,13,10,8,7,6,6,7,8];
+  for(let i=0;i<48;i++){
+    const t=new Date(base.getTime()+i*3600000);
+    const p=n=>String(n).padStart(2,'0');
+    times.push(`${t.getFullYear()}-${p(t.getMonth()+1)}-${p(t.getDate())}T${p(t.getHours())}:00`);
+    spd.push(+(pat[i]||8).toFixed(1));
+    gust.push(+((pat[i]||8)*1.3).toFixed(1));
+    dir.push(130+Math.round(Math.sin(i*0.4)*25));
+    temp.push(78+Math.round(Math.sin(i*0.3)*6));
+    cloud.push(Math.round(20+Math.sin(i*0.5)*40+Math.random()*20));
+    precip.push(0);
+  }
+  return {hourly:{time:times,windspeed_10m:spd,windgusts_10m:gust,winddirection_10m:dir,temperature_2m:temp,cloudcover:cloud,precipitation:precip},_mock:true};
+}
+
+// ═══════════════════════════════════════════════
+// NOAA LIVE
+// ═══════════════════════════════════════════════
+function degToCompass(d) {
+  const dirs=['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'];
+  return dirs[Math.round(+d/22.5)%16];
+}
+
+async function fetchLive(stationId) {
+  const st = STATIONS[stationId];
+  if (st.source === 'openmeteo') return fetchLiveOpenMeteo(st);
+  // NOAA CO-OPS via Cloudflare Worker proxy
+  const PROXY='https://chswindalert.simmons-rob.workers.dev';
+  const resp=await fetch(`${PROXY}?station=${stationId}`);
+  const json=await resp.json();
+  if(json.error) throw new Error(json.error.message);
+  const d=Array.isArray(json.data)?json.data[json.data.length-1]:json.data;
+  return {speedKt:+(+d.s*0.868976).toFixed(1),gustKt:+(+d.g*0.868976).toFixed(1),dirDeg:+d.d,dirCompass:d.dr,time:d.t};
+}
+
+async function fetchLiveOpenMeteo(st) {
+  const tz = encodeURIComponent(st.timezone || 'America/New_York');
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=${st.lat}&longitude=${st.lon}`+
+    `&current=wind_speed_10m,wind_direction_10m,wind_gusts_10m&windspeed_unit=kn&timezone=${tz}`;
+  const r = await fetch(url);
+  const j = await r.json();
+  if (j.error) throw new Error(j.reason || 'Open-Meteo error');
+  const c = j.current;
+  const dirDeg = Math.round(c.wind_direction_10m);
+  const t = new Date(c.time);
+  return {
+    speedKt: +(+c.wind_speed_10m).toFixed(1),
+    gustKt:  +(+c.wind_gusts_10m).toFixed(1),
+    dirDeg,
+    dirCompass: degToCompass(dirDeg),
+    time: `${String(t.getHours()).padStart(2,'0')}:${String(t.getMinutes()).padStart(2,'0')}`,
+  };
+}
+
+function renderLive(data) {
+  const kt=data.speedKt;
+  const el=document.getElementById('live-speed');
+  el.className=`live-speed ${speedClass(kt)}`;
+  el.innerHTML=`${kt}<span class="live-unit">kt</span>`;
+  document.getElementById('live-dir').textContent=`${data.dirCompass} (${data.dirDeg}°)`;
+  document.getElementById('live-gust').textContent=`${data.gustKt} kt`;
+  document.getElementById('live-time').textContent=data.time;
+  document.getElementById('status-dot').style.background=speedColor(kt);
+  document.getElementById('status-text').textContent=statusMsg(kt)+(data.isMock?' — sample data':'');
+  document.getElementById('last-refresh').textContent=new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
+  document.getElementById('map-label').innerHTML=`<span style="display:inline-block;transform:rotate(${(data.dirDeg+180)%360}deg);color:var(--wind);margin-right:4px">↑</span>${data.dirCompass} ${data.dirDeg}° · ${data.speedKt} kt`+(data.isMock?' (sample)':'');
+  updateMapMarker(data);
+  updateParticles(data);
+  updateKiteboarders(data);
+}
+
+// ═══════════════════════════════════════════════
+// LEAFLET MAP
+// ═══════════════════════════════════════════════
+let leafletMap=null, markerLayer=null;
+const stationLiveData={};
+
+function initMap() {
+  const c=MAP_CENTERS[activeStation];
+  leafletMap=L.map('leaflet-map',{center:[c.lat,c.lon],zoom:c.zoom,zoomControl:true,attributionControl:false});
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19}).addTo(leafletMap);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png',{maxZoom:19,opacity:0.85,subdomains:'abcd'}).addTo(leafletMap);
+  markerLayer=L.layerGroup().addTo(leafletMap);
+  leafletMap.on('resize move zoom', syncCanvases);
+
+  // Click anywhere on the map to move the active station's marker there.
+  // The coords show in the corner so you can lock them in permanently.
+  leafletMap.on('click', (e) => {
+    const lat = +e.latlng.lat.toFixed(5);
+    const lon = +e.latlng.lng.toFixed(5);
+    STATIONS[activeStation].lat = lat;
+    STATIONS[activeStation].lon = lon;
+    MAP_CENTERS[activeStation].lat = lat;
+    MAP_CENTERS[activeStation].lon = lon;
+    redrawMarkers();
+    document.getElementById('coord-display').textContent = `📍 ${lat}, ${lon}`;
+    document.getElementById('coord-display').style.display = 'block';
+    console.log(`Marker moved to: lat:${lat}, lon:${lon}`);
+  });
+
+  setTimeout(syncCanvases,400);
+  if (window.ResizeObserver) {
+    new ResizeObserver(() => requestAnimationFrame(() => { leafletMap.invalidateSize(); syncCanvases(); }))
+      .observe(document.getElementById('map-container'));
+  }
+}
+
+function flyToStation(id) {
+  if(!leafletMap) return;
+  const c=MAP_CENTERS[id];
+  leafletMap.flyTo([c.lat,c.lon],c.zoom,{duration:1.0});
+}
+
+function updateMapMarker(live) {
+  stationLiveData[activeStation]=live;
+  if(!leafletMap) return;
+  redrawMarkers();
+}
+
+function redrawMarkers() {
+  markerLayer.clearLayers();
+  Object.entries(STATIONS).forEach(([id,st])=>{
+    const d=stationLiveData[id];
+    const kt=d?d.speedKt:0;
+    const color=d?speedColor(kt):'#4fc8e8';
+    const isActive=id===activeStation;
+    const arrowDeg=d?(d.dirDeg+180)%360:0;
+    const S=isActive?56:40, dotR=isActive?9:6;
+    const shaftLen=isActive?20:13, headW=isActive?6:4, headLen=isActive?9:6;
+
+    const pulseSvg=(isActive&&d)?`<circle cx="0" cy="0" r="${dotR+2}" fill="none" stroke="${color}" stroke-width="1.5">
+      <animate attributeName="r" from="${dotR}" to="${dotR+18}" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="0.5" to="0" dur="2s" repeatCount="indefinite"/>
+    </circle>`:'';
+
+    const arrowSvg=d?`<g transform="rotate(${arrowDeg},0,0)">
+      <line x1="0" y1="${dotR+1}" x2="0" y2="${dotR+shaftLen}" stroke="${color}" stroke-width="${isActive?2.5:1.8}" stroke-linecap="round"/>
+      <polygon points="0,${-(dotR+shaftLen+headLen)} ${-headW},${-(dotR+shaftLen)} ${headW},${-(dotR+shaftLen)}" fill="${color}"/>
+    </g>`:'';
+
+    const ktLabel=d?`<text x="${dotR+6}" y="4" font-family="monospace" font-size="${isActive?11:9}" fill="${color}" font-weight="bold" filter="url(#sh)">${kt}kt</text>`:'';
+
+    const svg=`<svg width="${S*2}" height="${S*2}" viewBox="${-S} ${-S} ${S*2} ${S*2}" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
+      <defs><filter id="sh"><feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="rgba(0,0,0,0.95)"/></filter></defs>
+      ${pulseSvg}
+      <circle cx="0" cy="0" r="${dotR}" fill="${color}" stroke="white" stroke-width="${isActive?1.8:1.2}" opacity="0.93"/>
+      ${arrowSvg}${ktLabel}
+    </svg>`;
+
+    const icon=L.divIcon({html:svg,className:'',iconSize:[S*2,S*2],iconAnchor:[S,S]});
+    const m=L.marker([st.lat,st.lon],{icon,zIndexOffset:isActive?1000:0});
+    m.bindTooltip(st.name,{direction:'top',offset:[0,-S]});
+    markerLayer.addLayer(m);
+  });
+}
+
+// ═══════════════════════════════════════════════
+// OPEN-METEO FORECAST
+// ═══════════════════════════════════════════════
+async function fetchForecast(lat,lon,model,timezone) {
+  const tz = encodeURIComponent(timezone || 'America/New_York');
+  const url=`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}`+
+    `&hourly=windspeed_10m,windgusts_10m,winddirection_10m,temperature_2m,cloudcover,precipitation`+
+    `&windspeed_unit=kn&temperature_unit=fahrenheit&timezone=${tz}&forecast_days=3&models=${model}`;
+  const r=await fetch(url);
+  const j=await r.json();
+  if(j.error) throw new Error(j.reason||'Forecast error');
+  return j;
+}
+
+// ═══════════════════════════════════════════════
+// KITEBOARDER OVERLAY
+// Shows two riders on the map, kite pointing UPWIND,
+// each moving perpendicular to wind (opposite directions).
+// Wake trails behind each rider.
+// ═══════════════════════════════════════════════
+
+// Offset a lat/lon by distance in meters along a compass bearing.
+function offsetLatLon(lat, lon, bearingDeg, meters) {
+  const R = 6378137;
+  const rad = bearingDeg * Math.PI / 180;
+  const dLat = (meters * Math.cos(rad)) / R * 180 / Math.PI;
+  const dLon = (meters * Math.sin(rad)) / (R * Math.cos(lat * Math.PI / 180)) * 180 / Math.PI;
+  return [lat + dLat, lon + dLon];
+}
+
+// Canonical kiteboarder SVG: kite UP (north), rider moving RIGHT (east), wake trailing LEFT.
+// Rotating by wind_from bearing points the kite upwind; rider then moves perpendicular to wind.
+// mirror=true flips horizontally so the rider goes the OTHER perpendicular direction.
+let _kbSeq = 0;
+function kiteboarderSvg(rotationDeg, kiteColor, mirror) {
+  const id = 'kb' + (++_kbSeq);
+  const flip = mirror ? 'scale(-1,1)' : '';
+  return `<svg width="110" height="110" viewBox="-55 -65 110 110" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
+    <defs>
+      <linearGradient id="${id}_wk" x1="1" x2="0" y1="0.5" y2="0.5">
+        <stop offset="0"    stop-color="#ffffff" stop-opacity="0.9"/>
+        <stop offset="0.35" stop-color="#c8f0ff" stop-opacity="0.6"/>
+        <stop offset="1"    stop-color="#4fc8e8" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <g transform="rotate(${rotationDeg}) ${flip}">
+      <!-- Wake trail: two paths for foamy spray look, extends LEFT (behind rider) -->
+      <path d="M -9 10 Q -22 12 -36 10 T -66 6"
+        stroke="url(#${id}_wk)" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+      <path d="M -9 12 Q -24 14 -38 13 T -60 10"
+        stroke="url(#${id}_wk)" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+      <!-- Board -->
+      <ellipse cx="0" cy="8" rx="12" ry="3" fill="#4fc8e8"
+        stroke="#e8f4ff" stroke-width="0.6" opacity="0.95"/>
+      <!-- Legs -->
+      <line x1="-3" y1="8" x2="-1" y2="0" stroke="#e8f4ff" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="3"  y1="8" x2="1"  y2="0" stroke="#e8f4ff" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Torso leaning back toward kite -->
+      <line x1="0" y1="0" x2="1" y2="-9" stroke="#e8f4ff" stroke-width="3" stroke-linecap="round"/>
+      <!-- Head -->
+      <circle cx="1" cy="-12" r="2.5" fill="#e8f4ff" stroke="#0c3d6b" stroke-width="0.4"/>
+      <!-- Arms holding bar -->
+      <line x1="1" y1="-6" x2="-5" y2="-17" stroke="#e8f4ff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="1" y1="-6" x2="6"  y2="-17" stroke="#e8f4ff" stroke-width="2" stroke-linecap="round"/>
+      <!-- Control bar -->
+      <line x1="-6" y1="-17" x2="7" y2="-17" stroke="#e8f4ff" stroke-width="1.6" stroke-linecap="round"/>
+      <!-- Kite lines: from control bar out to kite (50% longer than v1.0) -->
+      <line x1="-4" y1="-17" x2="33" y2="-45" stroke="#e8f4ff" stroke-width="0.55" opacity="0.5"/>
+      <line x1="5"  y1="-17" x2="45" y2="-33" stroke="#e8f4ff" stroke-width="0.55" opacity="0.5"/>
+      <!-- Kite: original size, positioned 45° up-and-forward with 50% longer lines.
+           At 45° angle from rider, distance ≈ 63 (vs original 42 = 50% longer). -->
+      <g transform="translate(44, -44) rotate(45)">
+        <path d="M -19 2 Q -14 7 -8 7 L 8 7 Q 14 7 19 2 Q 15 -6 0 -7 Q -15 -6 -19 2 Z"
+          fill="${kiteColor}" stroke="#fff" stroke-width="0.9" opacity="0.95"/>
+        <line x1="0" y1="2" x2="0" y2="-7" stroke="#fff" stroke-width="0.4" opacity="0.55"/>
+      </g>
+    </g>
+  </svg>`;
+}
+
+let kbMarker = null;
+let kbState = {
+  t: 0,             // -1 to +1, current position along perpendicular axis (kite)
+  dir: 1,           // +1 or -1, direction of motion (kite)
+  mirror: false,    // SVG mirror flag (kite — rider faces the direction of motion)
+  windFrom: 0,      // wind bearing (updated on live refresh)
+  stationId: null,  // which station this rider belongs to
+  // Paraglider state (used when active station has sport:'paragliding')
+  pgAngle: 0,           // radians around center
+  pgRadius: 100,        // pixels from center
+  pgRadiusTarget: 100,
+  pgFacingBearing: 0,   // current SVG rotation for wobble smoothing
+};
+
+function makeKbIcon(windFrom, mirror) {
+  // Kite must be DOWNWIND of the rider (that's what tensions the lines).
+  // Canonical SVG has kite at bearing 0. Rotate by windFrom+180 to point it downwind.
+  const rotation = (windFrom + 180) % 360;
+  const svg = kiteboarderSvg(rotation, '#f5a623', mirror);
+  return L.divIcon({html:svg, className:'', iconSize:[110,110], iconAnchor:[55,55]});
+}
+
+// ─── Paraglider ─────────────────────────────────────────
+// Wing directly overhead (no forward angle), no wake.
+// Rotated to match direction of motion (tangent to circling path).
+function paragliderSvg(rotationDeg) {
+  const id = 'pg' + (++_kbSeq);
+  return `<svg width="110" height="110" viewBox="-55 -65 110 110" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
+    <g transform="rotate(${rotationDeg})">
+      <!-- Harness / seat pod -->
+      <path d="M -6 8 L 6 8 L 4 3 L -4 3 Z" fill="#4fc8e8" stroke="#e8f4ff" stroke-width="0.6" opacity="0.95"/>
+      <!-- Legs tucked in sit position -->
+      <line x1="-3" y1="8" x2="-6" y2="3" stroke="#e8f4ff" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="3"  y1="8" x2="6"  y2="3" stroke="#e8f4ff" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Torso -->
+      <line x1="0" y1="3" x2="0" y2="-6" stroke="#e8f4ff" stroke-width="3" stroke-linecap="round"/>
+      <!-- Head -->
+      <circle cx="0" cy="-9" r="2.5" fill="#e8f4ff" stroke="#0c3d6b" stroke-width="0.4"/>
+      <!-- Arms up holding brake toggles -->
+      <line x1="0" y1="-4" x2="-8" y2="-15" stroke="#e8f4ff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="-4" x2="8"  y2="-15" stroke="#e8f4ff" stroke-width="2" stroke-linecap="round"/>
+      <!-- Suspension lines from harness fanning up to wing -->
+      <line x1="-3" y1="3" x2="-25" y2="-38" stroke="#e8f4ff" stroke-width="0.4" opacity="0.5"/>
+      <line x1="-2" y1="3" x2="-14" y2="-44" stroke="#e8f4ff" stroke-width="0.4" opacity="0.5"/>
+      <line x1="-1" y1="3" x2="-4"  y2="-46" stroke="#e8f4ff" stroke-width="0.4" opacity="0.5"/>
+      <line x1="1"  y1="3" x2="4"   y2="-46" stroke="#e8f4ff" stroke-width="0.4" opacity="0.5"/>
+      <line x1="2"  y1="3" x2="14"  y2="-44" stroke="#e8f4ff" stroke-width="0.4" opacity="0.5"/>
+      <line x1="3"  y1="3" x2="25"  y2="-38" stroke="#e8f4ff" stroke-width="0.4" opacity="0.5"/>
+      <!-- Wing arc canopy directly overhead -->
+      <path d="M -28 -38 Q -26 -46 -14 -47 L 14 -47 Q 26 -46 28 -38 Q 24 -42 14 -43 L -14 -43 Q -24 -42 -28 -38 Z"
+        fill="#f5a623" stroke="#fff" stroke-width="0.7" opacity="0.95"/>
+      <!-- Wing cell dividers -->
+      <line x1="-14" y1="-47" x2="-14" y2="-43" stroke="rgba(255,255,255,0.4)" stroke-width="0.4"/>
+      <line x1="0"   y1="-47" x2="0"   y2="-43" stroke="rgba(255,255,255,0.4)" stroke-width="0.4"/>
+      <line x1="14"  y1="-47" x2="14"  y2="-43" stroke="rgba(255,255,255,0.4)" stroke-width="0.4"/>
+    </g>
+  </svg>`;
+}
+
+function makePgIcon(rotationDeg) {
+  const svg = paragliderSvg(rotationDeg);
+  return L.divIcon({html:svg, className:'', iconSize:[110,110], iconAnchor:[55,55]});
+}
+
+// Called on live-wind updates: creates/removes marker, updates rotation for new wind direction.
+function updateKiteboarders(live) {
+  if (!leafletMap) return;
+
+  // Always show the marker as long as we have a wind direction reading.
+  if (live.dirDeg == null || isNaN(live.dirDeg)) {
+    if (kbMarker) { leafletMap.removeLayer(kbMarker); kbMarker = null; }
+    return;
+  }
+
+  kbState.windFrom = live.dirDeg;
+  const st = STATIONS[activeStation];
+  const isPg = st.sport === 'paragliding';
+
+  // Reset animation state on station change (may also switch sport)
+  if (kbState.stationId !== activeStation) {
+    kbState.stationId = activeStation;
+    kbState.t = 0;
+    kbState.dir = 1;
+    kbState.mirror = false;
+    kbState.pgAngle = Math.random() * Math.PI * 2;
+    kbState.pgRadius = 100;
+    kbState.pgRadiusTarget = 100;
+    kbState.pgFacingBearing = ((kbState.pgAngle * 180 / Math.PI) + 180) % 360;
+    // Force marker recreation since sport may have changed
+    if (kbMarker) { leafletMap.removeLayer(kbMarker); kbMarker = null; }
+  }
+
+  const icon = isPg
+    ? makePgIcon(kbState.pgFacingBearing)
+    : makeKbIcon(kbState.windFrom, kbState.mirror);
+  if (!kbMarker) {
+    kbMarker = L.marker([st.lat, st.lon], {icon, interactive:false, keyboard:false}).addTo(leafletMap);
+  } else if (!isPg) {
+    // Only kb needs icon refresh on wind change (rotation follows wind).
+    // PG rotation follows the animation itself and is updated in tickParaglider.
+    kbMarker.setIcon(icon);
+  }
+}
+
+// Called every animation frame: advances t, updates position, flips SVG on turnaround.
+function tickKiteboarder() {
+  if (!kbMarker || !leafletMap) return;
+  const st = STATIONS[activeStation];
+  if (st.sport === 'paragliding') return tickParaglider();
+
+  const speed = 0.003;   // fraction of range per frame (~5–6s per crossing at 60fps)
+  kbState.t += kbState.dir * speed;
+
+  // Turnaround: reached an extreme, flip direction and mirror the SVG so rider faces the new way
+  let flipped = false;
+  if (kbState.t >= 1)      { kbState.t = 1;  kbState.dir = -1; kbState.mirror = true;  flipped = true; }
+  else if (kbState.t <= -1){ kbState.t = -1; kbState.dir = 1;  kbState.mirror = false; flipped = true; }
+  if (flipped) kbMarker.setIcon(makeKbIcon(kbState.windFrom, kbState.mirror));
+
+  // Convert t → screen pixel offset along axis perpendicular to wind
+  const mapSize = leafletMap.getSize();
+  const rangePx = mapSize.x * 0.35;   // 35% each side of center = 70% total range
+
+  // With rotation of (windFrom + 180), canonical rider (facing +x) ends up facing
+  // bearing (windFrom + 270). The animation axis is that same bearing so the rider
+  // moves in the direction they're facing (mirror flag flips it on turnaround).
+  const axisBearing = (kbState.windFrom + 270) % 360;  // perpendicular to wind
+  const axisRad = axisBearing * Math.PI / 180;
+  const dxPx = kbState.t * rangePx * Math.sin(axisRad);
+  const dyPx = kbState.t * rangePx * -Math.cos(axisRad);
+
+  const centerPx = leafletMap.latLngToContainerPoint(L.latLng(st.lat, st.lon));
+  const targetPx = L.point(centerPx.x + dxPx, centerPx.y + dyPx);
+  kbMarker.setLatLng(leafletMap.containerPointToLatLng(targetPx));
+}
+
+// Paraglider tick: slow orbit around station with wandering radius + subtle wobble.
+// Rotation follows tangent-to-circle direction so pilot faces where they're moving.
+function tickParaglider() {
+  const angleSpeed = 0.006;    // radians per frame — full loop ~17s at 60fps
+  kbState.pgAngle += angleSpeed;
+
+  // Occasionally pick a new target radius so the orbit isn't a perfect circle
+  if (Math.random() < 0.008) {
+    kbState.pgRadiusTarget = 60 + Math.random() * 80;   // 60–140 px from center
+  }
+  kbState.pgRadius += (kbState.pgRadiusTarget - kbState.pgRadius) * 0.015;
+
+  // Tiny random wobble on the angle for organic feel
+  const wobble = (Math.random() - 0.5) * 0.02;
+  const effAngle = kbState.pgAngle + wobble;
+
+  const st = STATIONS[activeStation];
+  const centerPx = leafletMap.latLngToContainerPoint(L.latLng(st.lat, st.lon));
+  const dx = Math.cos(effAngle) * kbState.pgRadius;
+  const dy = Math.sin(effAngle) * kbState.pgRadius;
+  kbMarker.setLatLng(leafletMap.containerPointToLatLng(L.point(centerPx.x + dx, centerPx.y + dy)));
+
+  // Facing direction is tangent to circle. At angle a, motion vector is
+  // (-sin a, cos a) in SVG coords → compass bearing = (a * 180/π + 180) mod 360
+  const facingBearing = ((kbState.pgAngle * 180 / Math.PI) + 180) % 360;
+
+  // Only rebuild icon (expensive DOM op) when bearing changed by >4°
+  const diff = Math.abs(facingBearing - kbState.pgFacingBearing);
+  const wrapDiff = Math.min(diff, 360 - diff);
+  if (wrapDiff > 4) {
+    kbState.pgFacingBearing = facingBearing;
+    kbMarker.setIcon(makePgIcon(facingBearing));
+  }
+}
+
+// ═══════════════════════════════════════════════
+// LINKED CROSSHAIR — wind chart & tide chart sync
+// ═══════════════════════════════════════════════
+let sharedHoverTime = null;  // Date object, or null
+
+function findClosestTimeIndex(timeObjs, target) {
+  if (!target || !timeObjs || !timeObjs.length) return -1;
+  const targetMs = target.getTime();
+  let best = -1, bestDiff = Infinity;
+  for (let i = 0; i < timeObjs.length; i++) {
+    const d = Math.abs(timeObjs[i].getTime() - targetMs);
+    if (d < bestDiff) { bestDiff = d; best = i; }
+  }
+  return best;
+}
+
+// Plugin drawn on both charts — shows vertical dashed line at the shared time
+const linkedCrosshairPlugin = {
+  id: 'linkedCrosshair',
+  afterDraw(chart) {
+    if (!sharedHoverTime || !chart.$times) return;
+    const idx = findClosestTimeIndex(chart.$times, sharedHoverTime);
+    if (idx < 0) return;
+    const { ctx: c, chartArea, scales } = chart;
+    const xPx = scales.x.getPixelForValue(idx);
+    if (xPx < chartArea.left || xPx > chartArea.right) return;
+    c.save();
+    c.strokeStyle = 'rgba(232,244,255,0.55)';
+    c.lineWidth = 1.3;
+    c.setLineDash([3, 3]);
+    c.beginPath();
+    c.moveTo(xPx, chartArea.top);
+    c.lineTo(xPx, chartArea.bottom);
+    c.stroke();
+    c.restore();
+  }
+};
+
+function attachCrosshairLinker(chart) {
+  const canvas = chart.canvas;
+  canvas.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const { chartArea, scales } = chart;
+    if (x < chartArea.left || x > chartArea.right) {
+      if (sharedHoverTime) {
+        sharedHoverTime = null;
+        redrawLinkedCharts();
+      }
+      return;
+    }
+    const dataIdx = Math.round(scales.x.getValueForPixel(x));
+    const times = chart.$times;
+    if (!times || dataIdx < 0 || dataIdx >= times.length) return;
+    sharedHoverTime = times[dataIdx];
+    redrawLinkedCharts();
+  });
+  canvas.addEventListener('mouseleave', () => {
+    sharedHoverTime = null;
+    redrawLinkedCharts();
+  });
+}
+
+function redrawLinkedCharts() {
+  if (windChartInst) windChartInst.draw();
+  if (tideChartInst) tideChartInst.draw();
+}
+
+// ═══════════════════════════════════════════════
+// HIGHLIGHTS — click and drag on a chart to mark the hours you might go.
+// Purely visual; they do not change any alerts or data.
+// ═══════════════════════════════════════════════
+const goWindows = [];          // [{a:ms, b:ms}]
+let dragSel = null;
+
+function idxToMs(times, idx) {
+  const n = times.length;
+  idx = Math.max(0, Math.min(n-1, idx));
+  const i = Math.floor(idx), f = idx - i;
+  if (i >= n-1) return times[n-1].getTime();
+  return times[i].getTime() + (times[i+1].getTime() - times[i].getTime()) * f;
+}
+function msToIdx(times, ms) {
+  const n = times.length;
+  if (ms <= times[0].getTime()) return 0;
+  if (ms >= times[n-1].getTime()) return n-1;
+  for (let i = 0; i < n-1; i++) {
+    const t0 = times[i].getTime(), t1 = times[i+1].getTime();
+    if (ms >= t0 && ms <= t1) return i + (t1 === t0 ? 0 : (ms - t0)/(t1 - t0));
+  }
+  return n-1;
+}
+function xToIdx(chart, x) {
+  const n = chart.$times.length, xs = chart.scales.x;
+  const p0 = xs.getPixelForValue(0), p1 = xs.getPixelForValue(n-1);
+  return (x - p0) / (p1 - p0) * (n-1);
+}
+function snapMsAtX(chart, x) {
+  const n = chart.$times.length;
+  const idx = Math.round(Math.max(0, Math.min(n-1, xToIdx(chart, x))));
+  return chart.$times[idx].getTime();
+}
+function hlParts(w) {
+  const a = new Date(w.a), b = new Date(w.b);
+  const dn = d => d.toLocaleDateString('en-US', {weekday:'short'});
+  const tm = d => String(d.getHours()).padStart(2,'0') + ':00';
+  const same = a.toDateString() === b.toDateString();
+  return { s:[dn(a), tm(a)], e: same ? [tm(b)] : [dn(b), tm(b)] };
+}
+// Draws the date/time label inside a band: one line if it fits, otherwise wrapped
+// onto more lines, and rotated vertical if even that is too wide.
+function drawHlLabel(ctx, chartArea, x1, wpx, w) {
+  if (wpx < 12) return;
+  const {s, e} = hlParts(w);
+  const sT = s.join(' '), eT = e.join(' ');
+  const layouts = [[sT + '–' + eT], [sT, '–' + eT], [...s, '–', ...e]];
+  const LH = 12, top = chartArea.top + 6, avail = wpx - 6, cx = x1 + wpx/2;
+  ctx.save();
+  ctx.font = '10px "Space Grotesk", sans-serif';
+  if ('letterSpacing' in ctx) ctx.letterSpacing = '-0.4px';
+  ctx.fillStyle = 'rgba(61,232,160,0.95)';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'top';
+  for (const lines of layouts) {
+    const widest = Math.max(...lines.map(l => ctx.measureText(l).width));
+    if (widest <= avail && lines.length * LH <= chartArea.bottom - top) {
+      lines.forEach((l, i) => ctx.fillText(l, cx, top + i * LH));
+      ctx.restore();
+      return;
+    }
+  }
+  // vertical fallback
+  const h = chartArea.bottom - chartArea.top - 8;
+  let txt = layouts[0][0];
+  if (ctx.measureText(txt).width > h) txt = s[s.length-1] + '–' + e[e.length-1];
+  ctx.translate(cx, (chartArea.top + chartArea.bottom) / 2);
+  ctx.rotate(-Math.PI/2);
+  ctx.textBaseline = 'middle';
+  ctx.fillText(txt, 0, 0);
+  ctx.restore();
+}
+function updateHlButton() {
+  const b = document.getElementById('hl-clear');
+  if (b) b.style.display = goWindows.length ? 'inline-block' : 'none';
+}
+function setGoWindow(a, b) {      // only one highlight at a time
+  goWindows.length = 0;
+  goWindows.push({a, b});
+}
+
+const highlightPlugin = {
+  id: 'goWindows',
+  beforeDatasetsDraw(chart) {
+    const times = chart.$times;
+    if (!times || times.length < 2) return;
+    const { ctx, chartArea } = chart;
+    const bands = goWindows.slice();
+    if (dragSel && dragSel.chart === chart && dragSel.moved) {
+      bands.push({a: Math.min(dragSel.a, dragSel.b), b: Math.max(dragSel.a, dragSel.b)});
+    }
+    const first = times[0].getTime(), last = times[times.length-1].getTime();
+    ctx.save();
+    bands.forEach(w => {
+      if (w.b < first || w.a > last || w.b <= w.a) return;
+      const x1 = chart.scales.x.getPixelForValue(msToIdx(times, w.a));
+      const x2 = chart.scales.x.getPixelForValue(msToIdx(times, w.b));
+      const wpx = Math.max(x2 - x1, 2);
+      ctx.fillStyle = 'rgba(61,232,160,0.16)';
+      ctx.fillRect(x1, chartArea.top, wpx, chartArea.bottom - chartArea.top);
+      ctx.strokeStyle = 'rgba(61,232,160,0.6)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(x1, chartArea.top); ctx.lineTo(x1, chartArea.bottom);
+      ctx.moveTo(x1 + wpx, chartArea.top); ctx.lineTo(x1 + wpx, chartArea.bottom);
+      ctx.stroke();
+      drawHlLabel(ctx, chartArea, x1, wpx, w);
+    });
+    ctx.restore();
+  }
+};
+
+// One set of listeners per canvas; always works on whichever chart is current.
+function attachHighlightDrag(canvas) {
+  const xOf = e => e.clientX - canvas.getBoundingClientRect().left;
+  canvas.addEventListener('pointerdown', e => {
+    const chart = Chart.getChart(canvas);
+    if (!chart || !chart.$times || chart.$times.length < 2) return;
+    const x = xOf(e), ca = chart.chartArea;
+    if (x < ca.left || x > ca.right) return;
+    try { canvas.setPointerCapture(e.pointerId); } catch (_) {}
+    const ms = snapMsAtX(chart, x);
+    dragSel = {chart, a: ms, b: ms, x0: x, moved: false};
+  });
+  canvas.addEventListener('pointermove', e => {
+    if (!dragSel) return;
+    const chart = dragSel.chart;
+    const x = Math.max(chart.chartArea.left, Math.min(chart.chartArea.right, xOf(e)));
+    dragSel.b = snapMsAtX(chart, x);
+    if (Math.abs(x - dragSel.x0) > 4) dragSel.moved = true;
+    redrawLinkedCharts();
+  });
+  const finish = e => {
+    if (!dragSel) return;
+    const d = dragSel; dragSel = null;
+    if (d.moved) {
+      const a = Math.min(d.a, d.b), b = Math.max(d.a, d.b);
+      if (b > a) setGoWindow(a, b); else goWindows.length = 0;
+    } else {
+      goWindows.length = 0;      // a plain click clears the highlight
+    }
+    updateHlButton();
+    redrawLinkedCharts();
+  };
+  canvas.addEventListener('pointerup', finish);
+  canvas.addEventListener('pointercancel', () => { dragSel = null; redrawLinkedCharts(); });
+}
+
+// ═══════════════════════════════════════════════
+// WIND CHART (Chart.js line graph with 13kt threshold)
+// ═══════════════════════════════════════════════
+let windChartInst = null;
+let chartHours = 48;          // 24 or 48
+let lastWindOverlays = [];
+
+const OVERLAY_MODELS = [
+  {key:'best_match',   label:'HRRR / Best', color:'#8be9fd'},
+  {key:'gfs_seamless', label:'GFS',         color:'#b78cff'},
+  {key:'ecmwf_ifs025', label:'ECMWF',       color:'#ff7eb6'},
+  {key:'nam_conus',    label:'NAM',         color:'#e8f4ff'},
+];
+
+// Fetch every model except the selected one, for the dotted comparison lines.
+async function fetchOverlays(st) {
+  const list = OVERLAY_MODELS.filter(m => m.key !== fcModel);
+  const res = await Promise.allSettled(list.map(m => fetchForecast(st.lat, st.lon, m.key, st.timezone)));
+  const out = [];
+  res.forEach((r, i) => {
+    if (r.status !== 'fulfilled' || !r.value || !r.value.hourly || !Array.isArray(r.value.hourly.windspeed_10m)) return;
+    const map = {};
+    r.value.hourly.time.forEach((t, k) => {
+      const v = r.value.hourly.windspeed_10m[k];
+      if (v != null) map[t] = v;
+    });
+    if (Object.keys(map).length) out.push({...list[i], map});
+  });
+  return out;
+}
+
+// Legend lives in the chart header row (average first); click an entry to hide/show its line.
+function buildChartLegend(chart) {
+  const box = document.getElementById('chart-legend');
+  if (!box) return;
+  const ds = chart.data.datasets;
+  const isAvg = d => (d.label || '').startsWith('Model average');
+  const order = ds.map((_, i) => i).sort((a, b) => (isAvg(ds[b]) ? 1 : 0) - (isAvg(ds[a]) ? 1 : 0));
+  box.innerHTML = order.map(i => {
+    const d = ds[i], dash = (d.borderDash || []).join(' ');
+    return `<button class="lg-item" type="button" data-i="${i}"><svg width="20" height="8" aria-hidden="true"><line x1="1" y1="4" x2="19" y2="4" stroke="${d.borderColor}" stroke-width="${Math.max(1.6, Math.min(d.borderWidth || 2, 3))}" stroke-linecap="round"${dash ? ` stroke-dasharray="${dash}"` : ''}/></svg>${d.label}</button>`;
+  }).join('');
+  box.querySelectorAll('.lg-item').forEach(btn => btn.addEventListener('click', () => {
+    const i = +btn.dataset.i;
+    chart.setDatasetVisibility(i, !chart.isDatasetVisible(i));
+    btn.classList.toggle('off', !chart.isDatasetVisible(i));
+    chart.update();
+  }));
+}
+
+function renderWindChart(data, overlays) {
+  overlays = overlays || [];
+  lastWindOverlays = overlays;
+  const times  = data.hourly.time;
+  const speeds = data.hourly.windspeed_10m;
+  const gusts  = data.hourly.windgusts_10m;
+  const now    = new Date();
+  const cutoff = new Date(now.getTime() + chartHours*3600*1000);
+
+  const labels = [], spArr = [], guArr = [], timeObjs = [], timeStrs = [];
+  for (let i = 0; i < times.length; i++) {
+    const t = new Date(times[i]);
+    if (t < now || t >= cutoff) continue;
+    labels.push(t.toLocaleTimeString('en-GB', {hour:'2-digit', minute:'2-digit', hour12:false}));
+    spArr.push(+speeds[i].toFixed(1));
+    guArr.push(+gusts[i].toFixed(1));
+    timeObjs.push(t);
+    timeStrs.push(times[i]);
+  }
+
+  const canvas = document.getElementById('wind-chart');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+
+  if (windChartInst) { windChartInst.destroy(); windChartInst = null; }
+
+  // Custom 13kt threshold line plugin — dashed horizontal line + label
+  const thresholdPlugin = {
+    id: 'threshold13',
+    afterDraw(chart) {
+      const { ctx: c2, chartArea: {left, right}, scales: {y} } = chart;
+      const yPx = y.getPixelForValue(13);
+      c2.save();
+      c2.strokeStyle = 'rgba(61,232,160,0.55)';
+      c2.lineWidth   = 1.5;
+      c2.setLineDash([6, 4]);
+      c2.beginPath();
+      c2.moveTo(left,  yPx);
+      c2.lineTo(right, yPx);
+      c2.stroke();
+      c2.setLineDash([]);
+      c2.font      = '10px Space Mono, monospace';
+      c2.fillStyle = 'rgba(61,232,160,0.7)';
+      c2.textAlign = 'right';
+      c2.fillText('13 kt', right - 4, yPx - 4);
+      c2.restore();
+    }
+  };
+
+  // Blend of every model available at each hour (selected model + dotted overlays)
+  const avgArr = spArr.map((v, i) => {
+    const vals = [v];
+    overlays.forEach(m => { const x = m.map[timeStrs[i]]; if (x != null) vals.push(+x); });
+    return +(vals.reduce((a, b) => a + b, 0) / vals.length).toFixed(1);
+  });
+  const avgDataset = overlays.length ? [{
+    label: 'Model average (kt)',
+    data: avgArr,
+    borderColor: 'rgba(255,255,255,0.7)',
+    borderWidth: 3.8,
+    pointRadius: 0,
+    fill: false,
+    tension: 0.35,
+  }] : [];
+
+  windChartInst = new Chart(ctx, {
+    type: 'line',
+    plugins: [thresholdPlugin, highlightPlugin, linkedCrosshairPlugin],
+    data: {
+      labels,
+      datasets: [
+        {
+          label: (OVERLAY_MODELS.find(m => m.key === fcModel) || {label:'Wind'}).label + ' (kt)',
+          data:  spArr,
+          borderColor:          '#4fc8e8',
+          backgroundColor:      'rgba(79,200,232,0.09)',
+          borderWidth:          1.8,
+          borderDash:           [2, 3],
+          fill:                 false,
+          tension:              0.35,
+          pointRadius:          spArr.map(v => v >= 13 ? 5 : 2),
+          pointBackgroundColor: spArr.map(v => v >= 15 ? '#3de8a0' : v >= 13 ? '#f5a623' : '#556677'),
+          pointBorderColor:     'transparent',
+        },
+        {
+          label: 'Gust (kt)',
+          data:  guArr,
+          borderColor: 'rgba(245,166,35,0.65)',
+          borderWidth: 1.5,
+          borderDash:  [4, 3],
+          pointRadius: 0,
+          fill:        false,
+          tension:     0.35,
+        },
+        ...overlays.map(m => ({
+          label: m.label,
+          data:  timeStrs.map(t => m.map[t] == null ? null : +(+m.map[t]).toFixed(1)),
+          borderColor: m.color,
+          borderWidth: 1.8,
+          borderDash:  [2, 3],
+          pointRadius: 0,
+          fill:        false,
+          tension:     0.35,
+          spanGaps:    true,
+        })),
+        ...avgDataset
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode:'index', intersect:false },
+      plugins: {
+        legend: {
+          display: false,
+          labels: {
+            color: '#7090a8',
+            font: { family:'Space Grotesk', size:11 },
+            boxWidth: 14, padding: 14,
+            sort: (a, b) => (b.text.startsWith('Model average') ? 1 : 0) - (a.text.startsWith('Model average') ? 1 : 0),
+          }
+        },
+        tooltip: { enabled: false },
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: '#556677',
+            maxTicksLimit: 24,
+            font: { family:'Space Grotesk', size:10 },
+            maxRotation: 0, minRotation: 0,
+            autoSkip: true,
+          },
+          grid: { color:'rgba(79,200,232,0.05)' }
+        },
+        y: {
+          min: 0,
+          ticks: { color:'#7090a8', font:{ family:'Space Mono', size:9 } },
+          grid:  { color:'rgba(79,200,232,0.07)' },
+          title: { display:true, text:'Knots', color:'#7090a8', font:{ size:10 } },
+        }
+      }
+    }
+  });
+  windChartInst.$times = timeObjs;
+  buildChartLegend(windChartInst);
+  attachCrosshairLinker(windChartInst);
+}
+
+// ═══════════════════════════════════════════════
+// TIDE PREDICTIONS (NOAA CO-OPS)
+// Direct fetch — NOAA's tides API is CORS-enabled
+// ═══════════════════════════════════════════════
+let tideChartInst = null;
+
+async function fetchTides(stationId) {
+  const now = new Date();
+  const start = new Date(now.getTime());
+  const end   = new Date(now.getTime() + 48*3600*1000);
+  const fmt = d => d.getFullYear() +
+    String(d.getMonth()+1).padStart(2,'0') +
+    String(d.getDate()).padStart(2,'0');
+
+  const noaaUrl = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter` +
+    `?begin_date=${fmt(start)}&end_date=${fmt(end)}` +
+    `&station=${stationId}` +
+    `&product=predictions&datum=MLLW&time_zone=lst_ldt` +
+    `&units=english&format=json&interval=h`;
+
+  // Try direct first — works on hosted origins (Cloudflare Pages, etc)
+  try {
+    const r = await fetch(noaaUrl);
+    if (r.ok) {
+      const j = await r.json();
+      if (j.predictions) return j.predictions;
+      if (j.error) throw new Error(j.error.message);
+    }
+  } catch (e) {
+    console.warn('[tides] direct NOAA fetch blocked (likely CORS), trying proxy:', e.message);
+  }
+
+  // Fallback: public CORS proxy. Reliable for low-volume personal use.
+  const proxyUrl = 'https://corsproxy.io/?url=' + encodeURIComponent(noaaUrl);
+  const r = await fetch(proxyUrl);
+  if (!r.ok) throw new Error('proxy returned '+r.status);
+  const j = await r.json();
+  if (j.error) throw new Error(j.error.message);
+  return j.predictions;
+}
+
+// Detect high/low peaks from hourly predictions (local max/min)
+function findTidePeaks(predictions) {
+  const peaks = [];
+  for (let i = 1; i < predictions.length - 1; i++) {
+    const prev = +predictions[i-1].v;
+    const cur  = +predictions[i].v;
+    const next = +predictions[i+1].v;
+    if (cur > prev && cur > next)      peaks.push({idx:i, v:cur, type:'H'});
+    else if (cur < prev && cur < next) peaks.push({idx:i, v:cur, type:'L'});
+  }
+  return peaks;
+}
+
+async function loadTides() {
+  const requestStation = activeStation;
+  const st = STATIONS[requestStation];
+  const card = document.getElementById('tide-card');
+  if (!card) return;
+
+  if (!st.tides) {
+    card.style.display = 'none';
+    if (tideChartInst) { tideChartInst.destroy(); tideChartInst = null; }
+    lastTidePredictions = null;
+    return;
+  }
+  card.style.display = 'block';
+
+  const tideStationId = st.tides.stationId;
+  const viaLabel = st.tides.label;   // e.g. "Charleston Harbor" — shown when using nearby station
+  const displayLabel = viaLabel ? `${st.name} · via ${viaLabel}` : st.name;
+  document.getElementById('tide-station-label').textContent = displayLabel;
+
+  try {
+    const predictions = await fetchTides(tideStationId);
+    if (activeStation !== requestStation) return;  // user switched stations, discard
+    lastTidePredictions = predictions;
+    document.getElementById('tide-station-label').textContent = displayLabel;
+    renderTideChart(predictions);
+  } catch (e) {
+    if (activeStation !== requestStation) return;
+    lastTidePredictions = null;
+    console.warn('Tide fetch failed:', e.message);
+    document.getElementById('tide-station-label').textContent = displayLabel + ' (unavailable)';
+  }
+}
+
+function renderTideChart(rawPredictions) {
+  const canvas = document.getElementById('tide-chart');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  if (tideChartInst) { tideChartInst.destroy(); tideChartInst = null; }
+
+  // Truncate to exactly now → now+48h so x-axis aligns with wind chart
+  const now = new Date();
+  const cutoff = new Date(now.getTime() + chartHours*3600*1000);
+  const parseNoaa = s => {
+    const p = s.split(/[-\s:]/);
+    return new Date(+p[0], +p[1]-1, +p[2], +p[3], +p[4] || 0);
+  };
+  const predictions = rawPredictions.filter(p => {
+    const t = parseNoaa(p.t);
+    return t >= now && t < cutoff;
+  });
+
+  const labels = predictions.map(p => p.t.slice(11, 16));  // "HH:mm"
+  const values = predictions.map(p => +p.v);
+  const timeObjs = predictions.map(p => parseNoaa(p.t));
+  const peaks  = findTidePeaks(predictions);
+
+  const pointRadius = predictions.map((_, i) => peaks.find(p => p.idx === i) ? 5 : 0);
+  const pointBg     = predictions.map((_, i) => {
+    const pk = peaks.find(p => p.idx === i);
+    if (!pk) return 'transparent';
+    return pk.type === 'H' ? '#3de8a0' : '#f5a623';
+  });
+
+  // Find "now" index by closest local-time match
+  const nowMs = Date.now();
+  let nowIdx = 0, minDiff = Infinity;
+  for (let i = 0; i < predictions.length; i++) {
+    const p = predictions[i].t.split(/[-\s:]/);
+    const t = new Date(+p[0], +p[1]-1, +p[2], +p[3], +p[4] || 0).getTime();
+    const d = Math.abs(t - nowMs);
+    if (d < minDiff) { minDiff = d; nowIdx = i; }
+  }
+
+  // NOW vertical marker
+  const nowMarkerPlugin = {
+    id: 'tideNow',
+    afterDraw(chart) {
+      const { ctx: c2, chartArea: {top, bottom}, scales: {x} } = chart;
+      const xPx = x.getPixelForValue(nowIdx);
+      c2.save();
+      c2.strokeStyle = 'rgba(79,200,232,0.7)';
+      c2.lineWidth = 1.5;
+      c2.setLineDash([4, 3]);
+      c2.beginPath();
+      c2.moveTo(xPx, top);
+      c2.lineTo(xPx, bottom);
+      c2.stroke();
+      c2.setLineDash([]);
+      c2.font = 'bold 10px Space Mono, monospace';
+      c2.fillStyle = 'rgba(79,200,232,0.9)';
+      c2.textAlign = 'center';
+      c2.fillText('NOW', xPx, top - 4);
+      c2.restore();
+    }
+  };
+
+  // H / L labels near peak points
+  const peakLabelsPlugin = {
+    id: 'tidePeaks',
+    afterDatasetsDraw(chart) {
+      const { ctx: c2, scales: {x, y} } = chart;
+      c2.save();
+      c2.textAlign = 'center';
+      peaks.forEach(pk => {
+        const xPx = x.getPixelForValue(pk.idx);
+        const yPx = y.getPixelForValue(pk.v);
+        const above = pk.type === 'H';
+        c2.font = 'bold 11px Space Mono, monospace';
+        c2.fillStyle = above ? '#3de8a0' : '#f5a623';
+        c2.fillText(pk.type, xPx, yPx - 12);
+        c2.font = '10px "Space Grotesk", sans-serif';
+        c2.fillStyle = 'rgba(200,240,255,0.8)';
+        c2.fillText(pk.v.toFixed(1)+'ft', xPx, yPx - 21);
+        c2.fillStyle = 'rgba(112,144,168,0.75)';
+        c2.fillText(predictions[pk.idx].t.slice(11,16), xPx, yPx - 30);
+      });
+      c2.restore();
+    }
+  };
+
+  tideChartInst = new Chart(ctx, {
+    type: 'line',
+    plugins: [nowMarkerPlugin, peakLabelsPlugin, highlightPlugin, linkedCrosshairPlugin],
+    data: {
+      labels,
+      datasets: [{
+        label: 'Tide (ft)',
+        data:  values,
+        borderColor:     '#4fc8e8',
+        backgroundColor: 'rgba(79,200,232,0.13)',
+        borderWidth:     2.5,
+        fill:            true,
+        tension:         0.45,
+        pointRadius,
+        pointBackgroundColor: pointBg,
+        pointBorderColor: '#e8f4ff',
+        pointBorderWidth: 1.2,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode:'index', intersect:false },
+      layout: { padding: { top: 32, bottom: 6 } },  // room for peak labels
+      plugins: {
+        legend: { display: false },
+        tooltip: { enabled: false },
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: '#556677',
+            maxTicksLimit: 24,
+            font: { family:'Space Grotesk', size:10 },
+            maxRotation: 0, minRotation: 0,
+            autoSkip: true,
+          },
+          grid: { color:'rgba(79,200,232,0.05)' }
+        },
+        y: {
+          ticks: { color:'#7090a8', font:{ family:'Space Mono', size:9 } },
+          grid:  { color:'rgba(79,200,232,0.07)' },
+          title: { display:true, text:'Feet (MLLW)', color:'#7090a8', font:{ size:10 } },
+        }
+      }
+    }
+  });
+  tideChartInst.$times = timeObjs;
+  attachCrosshairLinker(tideChartInst);
+}
+
+// ═══════════════════════════════════════════════
+// FORECAST TABLE
+// ═══════════════════════════════════════════════
+function renderForecastTable(data,intervalHrs) {
+  const times=data.hourly.time, spd=data.hourly.windspeed_10m;
+  const gust=data.hourly.windgusts_10m, dirArr=data.hourly.winddirection_10m;
+  const temp=data.hourly.temperature_2m, cloud=data.hourly.cloudcover;
+  const precip=data.hourly.precipitation, now=new Date();
+
+  let indices=[];
+  for(let i=0;i<times.length;i++){
+    const t=new Date(times[i]);
+    if(t<now) continue;
+    if(intervalHrs===3&&t.getHours()%3!==0) continue;
+    indices.push(i);
+  }
+  indices=indices.slice(0,80);
+
+  const dayGroups={},dayOrder=[];
+  indices.forEach(i=>{
+    const t=new Date(times[i]);
+    const key=t.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}).toUpperCase();
+    if(!dayGroups[key]){dayGroups[key]=[];dayOrder.push(key);}
+    dayGroups[key].push(i);
+  });
+
+  const CELL=44,LABEL=62;
+  const rows=[
+    {key:'time',label:'time',render:i=>{
+      const h=new Date(times[i]).getHours(),night=h<6||h>=20;
+      return `<span style="font-size:.7rem;color:${night?'#384858':'var(--sub)'}">${String(h).padStart(2,'0')}</span>`;
+    }},
+    {key:'wind',label:'wind',render:i=>{
+      const rot=(dirArr[i]+180)%360;
+      return `<span style="font-size:1.05rem;display:inline-block;transform:rotate(${rot}deg);color:${speedColor(spd[i])}">↑</span>`;
+    }},
+    {key:'knots',label:'sustained',render:i=>{
+      const kt=+spd[i].toFixed(1);
+      return `<span class="kt-cell ${ktCellClass(kt)}">${kt}</span>`;
+    }},
+    {key:'gusts',label:'gusts kt',render:i=>{
+      const g=+gust[i].toFixed(1);
+      return `<span class="kt-cell ${ktCellClass(g)}" style="opacity:.82">${g}</span>`;
+    }},
+    {key:'temp',label:'°F',render:i=>{
+      const f=Math.round(temp[i]);
+      return `<span class="temp-cell">${f}</span>`;
+    }},
+    {key:'clouds',label:'clouds',render:i=>{
+      const pct=Math.min(100,Math.max(0,cloud[i]||0));
+      return `<div class="cloud-bar"><div class="cloud-fill" style="width:${pct}%"></div></div>`;
+    }},
+    {key:'mm',label:'mm',render:i=>{
+      const mm=+(precip[i]||0).toFixed(1);
+      return mm>0?`<span class="rain-cell" style="color:#4fc8e8;font-weight:700">${mm}</span>`
+                :`<span class="rain-cell" style="color:#2a3a4a">–</span>`;
+    }},
+  ];
+
+  let nowColIdx=0;
+  indices.forEach((di,ci)=>{if(new Date(times[di]).getTime()<=now.getTime()) nowColIdx=ci;});
+
+  let html='<div>';
+  html+='<div class="fc-row day-header"><div class="fc-row-label" style="color:transparent">-</div>';
+  dayOrder.forEach(day=>{
+    const cols=dayGroups[day].length, isLast=day===dayOrder[dayOrder.length-1];
+    html+=`<div class="fc-day-cell${isLast?'':' day-sep'}" style="width:${cols*CELL}px;min-width:${cols*CELL}px">${day}</div>`;
+  });
+  html+='</div>';
+
+  rows.forEach(row=>{
+    html+=`<div class="fc-row${row.key==='gusts'?' gust-row':''}" data-row="${row.key}">`;
+    html+=`<div class="fc-row-label">${row.label}</div>`;
+    indices.forEach((di,ci)=>{
+      const h=new Date(times[di]).getHours(),night=h<6||h>=20;
+      let sep=false;
+      dayOrder.forEach(d=>{const g=dayGroups[d];if(g[g.length-1]===di)sep=true;});
+      html+=`<div class="fc-cell${night?' night':''} ${sep?'day-sep':''}" style="position:relative">`;
+      if(ci===nowColIdx) html+='<div class="fc-now-marker"></div>';
+      html+=row.render(di);
+      html+='</div>';
+    });
+    html+='</div>';
+  });
+  html+='</div>';
+
+  document.getElementById('fc-grid').innerHTML=html;
+  document.getElementById('fc-loading').style.display='none';
+  document.getElementById('fc-table-wrap').style.display='block';
+  setTimeout(()=>{
+    const s=document.getElementById('fc-scroll');
+    s.scrollLeft=Math.max(0,LABEL+nowColIdx*CELL-100);
+  },50);
+  document.getElementById('fc-updated').textContent='updated '+
+    new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false});
+  renderSessionRec(buildSessionRec(data));
+}
+
+// ═══════════════════════════════════════════════
+// CONTROLS
+// ═══════════════════════════════════════════════
+function updateSubtitle() {
+  const st = STATIONS[activeStation];
+  const el = document.getElementById('subtitle');
+  if (el) el.textContent = `v7.0 · ${st.region} · ${st.name}`;
+}
+
+document.querySelectorAll('.station-tab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.station-tab').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    activeStation=btn.dataset.station;
+    btn.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});
+    updateSubtitle();
+    flyToStation(activeStation);
+    loadAll();
+  });
+});
+const moreToggle = document.getElementById('more-toggle');
+const morePanel  = document.getElementById('more-panel');
+function setMoreOpen(open) {
+  morePanel.classList.toggle('open', open);
+  moreToggle.classList.toggle('open', open);
+  moreToggle.setAttribute('aria-expanded', open);
+}
+function syncMoreToggle() {
+  moreToggle.classList.toggle('has-active', (STATIONS[activeStation].region || '') !== 'Charleston, SC');
+}
+moreToggle.addEventListener('click', () => setMoreOpen(!morePanel.classList.contains('open')));
+document.querySelectorAll('.station-tab').forEach(btn => btn.addEventListener('click', () => {
+  syncMoreToggle();
+  if (morePanel.contains(btn)) setMoreOpen(false);   // tuck the box away after picking a spot
+}));
+syncMoreToggle();
+document.querySelectorAll('.chart-btn[data-chart-hrs]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.chart-btn[data-chart-hrs]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    chartHours = parseInt(btn.dataset.chartHrs);
+    document.getElementById('chart-hours-label').textContent = chartHours;
+    if (lastForecastData) renderWindChart(lastForecastData, lastWindOverlays);
+    if (lastTidePredictions) renderTideChart(lastTidePredictions);
+  });
+});
+document.getElementById('hl-clear').addEventListener('click', () => {
+  goWindows.length = 0;
+  updateHlButton();
+  redrawLinkedCharts();
+});
+attachHighlightDrag(document.getElementById('wind-chart'));
+attachHighlightDrag(document.getElementById('tide-chart'));
+// ═══ Resizable boxes: diagonal corner on each box ═══
+// Top row (live + map): only the dragged box changes, the other fills the rest of the row.
+// Lower boxes: width change carries to every box below; height only changes the dragged box.
+const BOX_KEY = 'kwwBoxes_v5';
+let boxSizes = {};
+try { boxSizes = JSON.parse(localStorage.getItem(BOX_KEY)) || {}; } catch (e) { boxSizes = {}; }
+function saveBoxSizes() { try { localStorage.setItem(BOX_KEY, JSON.stringify(boxSizes)); } catch (e) {} }
+const BOXES = [
+  { key:'live', top:true, el:() => document.querySelector('.live-card'), minW:200, natural:true },
+  { key:'map',  top:true, el:() => document.querySelector('.map-card'), minW:200, minH:160 },
+  { key:'wind', el:() => document.getElementById('wind-chart').closest('.chart-card'), minW:320, minH:170, chart:true },
+  { key:'tide', el:() => document.getElementById('tide-chart').closest('.chart-card'), minW:320, minH:170, chart:true },
+  { key:'fc',   el:() => document.querySelector('.forecast-wrap'), minW:320, natural:true },
+];
+// Live card: when shrunk, drop content one line at a time (outlook, status, Updated, Gust, Direction)
+function liveHideList() {
+  const c = document.querySelector('.live-card');
+  return [...[...c.querySelectorAll('#session-rec .rec-line')].reverse(),
+          c.querySelector('#session-rec .rec-label'), c.querySelector('#session-rec'),
+          c.querySelector('.status-bar'),
+          ...[...c.querySelectorAll('.live-stat')].reverse()].filter(Boolean);
+}
+let fitBusy = false;
+function fitLive() {
+  const c = document.querySelector('.live-card');
+  if (!c || fitBusy) return;
+  fitBusy = true;
+  const list = liveHideList();
+  const row = c.querySelector('.live-row');
+  list.forEach(e => e.classList.remove('fit-hide'));
+  if (row) row.classList.remove('fit-hide');
+  if (c.classList.contains('rs-h')) {
+    for (const e of list) {
+      if (c.scrollHeight <= c.clientHeight + 1) break;
+      e.classList.add('fit-hide');
+    }
+    if (row && [...row.querySelectorAll('.live-stat')].every(x => x.classList.contains('fit-hide'))) row.classList.add('fit-hide');
+  }
+  fitBusy = false;
+}
+function liveMinH() {      // height with only label + number showing
+  const c = document.querySelector('.live-card');
+  const was = c.style.height, hadCls = c.classList.contains('rs-h');
+  c.classList.remove('rs-h'); c.style.height = '';
+  const list = liveHideList(), row = c.querySelector('.live-row');
+  list.forEach(e => e.classList.add('fit-hide')); if (row) row.classList.add('fit-hide');
+  const h = c.getBoundingClientRect().height;
+  list.forEach(e => e.classList.remove('fit-hide')); if (row) row.classList.remove('fit-hide');
+  c.style.height = was; if (hadCls) c.classList.add('rs-h');
+  return Math.ceil(h);
+}
+const fixMap = () => { if (leafletMap) leafletMap.invalidateSize(); };
+function setH(b, h) {
+  const el = b.el();
+  if (h == null) { el.style.height = ''; el.classList.remove('rs-fixed'); }
+  else { el.style.height = h + 'px'; if (b.chart) el.classList.add('rs-fixed'); }
+}
+const pageEl = document.querySelector('.container');
+const PAGE_MIN = 460;
+function setPage(W) {          // one width for the whole page: header, spots, every box
+  if (W == null) { pageEl.style.width = pageEl.style.maxWidth = pageEl.style.marginLeft = pageEl.style.marginRight = pageEl.style.boxSizing = ''; delete boxSizes.pageW; }
+  else {
+    W = Math.round(Math.max(PAGE_MIN, Math.min(document.documentElement.clientWidth, W)));
+    pageEl.style.boxSizing = 'border-box'; pageEl.style.width = W + 'px'; pageEl.style.maxWidth = 'none';
+    pageEl.style.marginLeft = '0'; pageEl.style.marginRight = 'auto';
+    boxSizes.pageW = W;
+  }
+  fixMap();
+  return W;
+}
+function setRatio(wl, wm) {    // top row: boxes share the row in proportion to these widths
+  const L = BOXES[0].el(), M = BOXES[1].el();
+  if (wl == null) { L.style.flex = M.style.flex = ''; return; }
+  L.style.flex = wl + ' ' + wl + ' 0px'; M.style.flex = wm + ' ' + wm + ' 0px';
+  boxSizes.live = Object.assign({}, boxSizes.live, { w:wl }); boxSizes.map = Object.assign({}, boxSizes.map, { w:wm });
+}
+function setTopH(h) {
+  BOXES.filter(o => o.top).forEach(o => {
+    const e = o.el();
+    if (h == null) { e.style.height = e.style.minHeight = e.style.alignSelf = ''; e.classList.remove('rs-h'); }
+    else { e.style.height = h + 'px'; e.style.minHeight = '0'; e.style.alignSelf = 'flex-start'; if (o.key === 'live') e.classList.add('rs-h'); }
+  });
+  fitLive();
+}
+function resetBox(b) {
+  setPage(null); setRatio(null); fixMap();
+  if (b.top) { setTopH(null); delete boxSizes.live; delete boxSizes.map; }
+  else { setH(b, null); delete boxSizes[b.key]; }
+  delete boxSizes.pageW;
+  if (!b.top) { if (boxSizes.live) delete boxSizes.live.w; if (boxSizes.map) delete boxSizes.map.w; }
+  fixMap(); fitLive();
+}
+// restore saved layout
+if (boxSizes.pageW) setPage(boxSizes.pageW);
+if (boxSizes.live && boxSizes.live.w && boxSizes.map && boxSizes.map.w) setRatio(boxSizes.live.w, boxSizes.map.w);
+if (boxSizes.live && boxSizes.live.h) setTopH(boxSizes.live.h);
+BOXES.filter(o => !o.top).forEach(o => { if (boxSizes[o.key] && boxSizes[o.key].h) setH(o, boxSizes[o.key].h); });
+fixMap();
+
+BOXES.forEach(b => {
+  const el = b.el();
+  if (!el) return;
+  const grip = document.createElement('div');
+  grip.className = 'rs-corner';
+  grip.title = 'Drag to resize · double-click to reset';
+  grip.innerHTML = '<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><line x1="11" y1="3" x2="3" y2="11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="11" y1="7" x2="7" y2="11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>';
+  el.appendChild(grip);
+  let drag = null;
+  grip.addEventListener('pointerdown', e => {
+    e.preventDefault(); e.stopPropagation();
+    const rect = el.getBoundingClientRect();
+    let minH = b.minH || 0;
+    if (b.top) minH = liveMinH();
+    else if (b.natural) { const ph = el.style.height; el.style.height = ''; minH = el.getBoundingClientRect().height; el.style.height = ph; }
+    const oth = b.top ? BOXES.find(o => o.top && o !== b) : null;
+    drag = { x:e.clientX, y:e.clientY, w0:rect.width, h0:rect.height, minH,
+             C0:pageEl.getBoundingClientRect().width, ow: oth ? oth.el().getBoundingClientRect().width : 0, oth };
+    try { grip.setPointerCapture(e.pointerId); } catch (_) {}
+    grip.classList.add('on'); document.body.classList.add('rs-dragging');
+  });
+  grip.addEventListener('pointermove', e => {
+    if (!drag) return;
+    const W = setPage(drag.C0 + e.clientX - drag.x);       // whole page follows the drag
+    const nh = Math.round(Math.max(drag.minH, Math.min(1600, drag.h0 + e.clientY - drag.y)));
+    if (b.top) {
+      const nw = Math.max(b.minW, drag.w0 + (W - drag.C0));
+      b.key === 'live' ? setRatio(nw, drag.ow) : setRatio(drag.ow, nw);
+      setTopH(nh);
+      boxSizes.live = Object.assign({}, boxSizes.live, { h:nh }); boxSizes.map = Object.assign({}, boxSizes.map, { h:nh });
+    } else {
+      setH(b, nh);
+      boxSizes[b.key] = Object.assign({}, boxSizes[b.key], { h:nh });
+    }
+    fixMap();
+  });
+  const end = () => {
+    if (!drag) return;
+    drag = null; grip.classList.remove('on'); document.body.classList.remove('rs-dragging');
+    saveBoxSizes();
+  };
+  grip.addEventListener('pointerup', end);
+  grip.addEventListener('pointercancel', end);
+  grip.addEventListener('dblclick', e => { e.stopPropagation(); resetBox(b); saveBoxSizes(); });
+});
+(function () {
+  const btn = document.createElement('button');
+  btn.id = 'reset-layout'; btn.type = 'button'; btn.textContent = '⟲ Default size';
+  btn.title = 'Restore default box and page sizes';
+  btn.addEventListener('click', () => {
+    setPage(null); setRatio(null); setTopH(null);
+    BOXES.filter(o => !o.top).forEach(o => setH(o, null));
+    boxSizes = {}; saveBoxSizes(); fixMap(); fitLive();
+    window.dispatchEvent(new Event('resize'));
+  });
+  document.body.appendChild(btn);
+})();
+(function () {
+  const c = document.querySelector('.live-card');
+  if (!c) return;
+  new MutationObserver(() => { if (c.classList.contains('rs-h')) fitLive(); }).observe(c, { childList:true, characterData:true, subtree:true, attributes:true, attributeFilter:['style'] });
+  if (window.ResizeObserver) new ResizeObserver(() => { if (c.classList.contains('rs-h')) fitLive(); }).observe(c);
+})();
+document.getElementById('fc-model').addEventListener('change',e=>{
+  fcModel=e.target.value;
+  const labels={'best_match':'HRRR / Best','gfs_seamless':'GFS','ecmwf_ifs025':'ECMWF','nam_conus':'NAM'};
+  const lbl=document.getElementById('chart-model-label');
+  if(lbl) lbl.textContent=labels[e.target.value]||e.target.value;
+  loadForecast();
+});
+document.querySelectorAll('.fc-interval-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.fc-interval-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    fcInterval=parseInt(btn.dataset.hrs);
+    if (lastForecastData) {
+      renderForecastTable(lastForecastData, fcInterval);
+    } else {
+      loadForecast();
+    }
+  });
+});
+
+// ═══════════════════════════════════════════════
+// EMAIL ALERTS
+// ═══════════════════════════════════════════════
+let lastForecastData = null;
+let lastTidePredictions = null;   // used by alert emails for low-tide bonuses
+const ALERT_KEY = 'kwwAlertConfig_v1';
+
+// Carrier SMS-gateway domains — send an email here and it converts to a text
+const CARRIER_GATEWAYS = {
+  tmobile: 'tmomail.net',
+  verizon: 'vtext.com',
+  att:     'txt.att.net',
+  cricket: 'sms.cricketwireless.net',
+  boost:   'sms.myboostmobile.com',
+};
+
+function computeToAddress(cfg) {
+  if (cfg.notifyType === 'sms') {
+    const gateway = CARRIER_GATEWAYS[cfg.carrier];
+    const digits = (cfg.phone || '').replace(/\D/g, '');
+    if (!gateway || !digits) return '';
+    return `${digits}@${gateway}`;
+  }
+  return (cfg.email || '').trim();
+}
+// To enable actual email sending, deploy a Cloudflare Worker that accepts
+// POST {email, subject, body} and sends via Resend/Mailgun/etc. Then set:
+const ALERT_WORKER_URL = 'https://windtextalerts.simmons-rob.workers.dev';
+
+function loadAlertConfig() {
+  try { return JSON.parse(localStorage.getItem(ALERT_KEY)); } catch { return null; }
+}
+function saveAlertConfig(cfg) {
+  localStorage.setItem(ALERT_KEY, JSON.stringify(cfg));
+}
+
+function readFormConfig() {
+  return {
+    notifyType: document.getElementById('alert-type').value,
+    email: document.getElementById('alert-email').value.trim(),
+    phone: document.getElementById('alert-phone').value.trim(),
+    carrier: document.getElementById('alert-carrier').value,
+    minSustained: +document.getElementById('alert-min-sustained').value || 0,
+    minGust: +document.getElementById('alert-min-gust').value || 0,
+    directionMode: document.getElementById('alert-direction').value,
+    directionRange: {
+      from: +document.getElementById('alert-dir-from').value,
+      to: +document.getElementById('alert-dir-to').value,
+    },
+    timeWindow: document.getElementById('alert-window').value,
+    cooldownHours: +document.getElementById('alert-cooldown').value || 6,
+    enabled: true,
+    lastSent: 0,
+  };
+}
+
+function writeFormFromConfig(cfg) {
+  if (!cfg) return;
+  document.getElementById('alert-type').value = cfg.notifyType || 'email';
+  document.getElementById('alert-email').value = cfg.email || '';
+  document.getElementById('alert-phone').value = cfg.phone || '';
+  document.getElementById('alert-carrier').value = cfg.carrier || 'tmobile';
+  document.getElementById('alert-min-sustained').value = cfg.minSustained || 12;
+  document.getElementById('alert-min-gust').value = cfg.minGust || '';
+  document.getElementById('alert-direction').value = cfg.directionMode || 'any';
+  if (cfg.directionRange) {
+    document.getElementById('alert-dir-from').value = cfg.directionRange.from || 0;
+    document.getElementById('alert-dir-to').value = cfg.directionRange.to || 360;
+  }
+  document.getElementById('alert-window').value = cfg.timeWindow || 'next24h';
+  document.getElementById('alert-cooldown').value = cfg.cooldownHours || 6;
+  toggleCustomDir();
+  toggleNotifyType();
+}
+
+function checkCriteria(forecastData, cfg) {
+  if (!forecastData || !forecastData.hourly) return [];
+  const times = forecastData.hourly.time;
+  const spd   = forecastData.hourly.windspeed_10m;
+  const gust  = forecastData.hourly.windgusts_10m;
+  const dir   = forecastData.hourly.winddirection_10m;
+  const now = new Date();
+  let windowEnd;
+  if (cfg.timeWindow === 'next24h')   windowEnd = new Date(now.getTime() + 24*3600*1000);
+  else if (cfg.timeWindow === 'next3days') windowEnd = new Date(now.getTime() + 3*24*3600*1000);
+  else                                 windowEnd = new Date(now.getTime() + 7*24*3600*1000);
+
+  const matches = [];
+  for (let i = 0; i < times.length; i++) {
+    const t = new Date(times[i]);
+    if (t < now || t > windowEnd) continue;
+    if (cfg.timeWindow === 'weekends') {
+      const d = t.getDay(); // 0=Sun, 6=Sat
+      if (d !== 0 && d !== 6) continue;
+    }
+    if (spd[i] < cfg.minSustained) continue;
+    if (cfg.minGust > 0 && gust[i] < cfg.minGust) continue;
+    if (cfg.directionMode !== 'any') {
+      const d = dir[i];
+      let inRange = false;
+      if (cfg.directionMode === 'onshore') {
+        // Charleston coast faces ~ENE, so onshore = E to S (45-180)
+        inRange = d >= 45 && d <= 180;
+      } else if (cfg.directionMode === 'cross') {
+        inRange = (d >= 0 && d <= 60) || (d >= 200 && d <= 250);
+      } else if (cfg.directionMode === 'custom') {
+        const f = cfg.directionRange.from, to = cfg.directionRange.to;
+        if (f <= to) inRange = d >= f && d <= to;
+        else         inRange = d >= f || d <= to; // wrap
+      }
+      if (!inRange) continue;
+    }
+    matches.push({time: times[i], speed: spd[i], gust: gust[i], dir: dir[i]});
+  }
+  return matches;
+}
+
+// Wind categorization tuned to user's tiers
+function windCategory(kt) {
+  if (kt >= 20) return { emoji: '🔥', label: 'CRAZY GOOD',  key: 'nuking' };
+  if (kt >= 15) return { emoji: '✅', label: 'Kite-on',     key: 'kiteon' };
+  if (kt >= 13) return { emoji: '🟡', label: 'Marginal',    key: 'marginal' };
+  if (kt >= 10) return { emoji: '🏄', label: 'Foilable',    key: 'foil' };
+  return              { emoji: '💨', label: 'Light',       key: 'light' };
+}
+
+// Multiple hype variants per category — picked randomly so emails aren't repetitive
+const HYPE_LINES = {
+  nuking: [
+    "🔥🔥🔥 IT'S ABSOLUTELY NUKING",
+    "🔥 Send-it day. Cancel your plans, call in sick.",
+    "🔥 This is a small-kite, big-grin day.",
+    "🔥 The wind gods are showing off. Don't waste this.",
+    "🔥 Somewhere between 'fun' and 'terrifying'. Get after it.",
+  ],
+  kiteon: [
+    "✅ Solid kite wind. Textbook conditions.",
+    "✅ Clean, kiteable, no excuses. Get out there.",
+    "✅ Grab your everyday kite and go.",
+    "✅ This is what you signed up for. Send it.",
+  ],
+  marginal: [
+    "🟡 Borderline but workable. Bring the biggest kite you own.",
+    "🟡 Not epic, but a session's a session.",
+    "🟡 12m weather. Might drop, might build — check before driving.",
+  ],
+  foil: [
+    "🏄 Foil weather. Ditch the twin tip.",
+    "🏄 Marginal for the twin tip, prime for the foil.",
+    "🏄 Light-wind gear day. Pump it up and glide.",
+  ],
+  light: [
+    "💨 Barely blowing. Might be a swim day instead.",
+  ],
+};
+
+// Special combo lines when wind is good AND the tide is near a low point
+const WIND_LOW_TIDE_HYPE = [
+  "🌊 Wind + low tide = the holy combo. Butter conditions inbound.",
+  "🌊 Flatwater special. Nail the tricks you've been sitting on.",
+  "🌊 Low tide during peak wind — best chance at glass.",
+];
+
+function pickRandom(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+// Check whether a given time is within 2h of a low-tide peak
+function isNearLowTide(timeObj, predictions) {
+  if (!predictions || predictions.length < 3) return null;
+  const peaks = findTidePeaks(predictions);
+  const targetMs = timeObj.getTime();
+  for (const p of peaks) {
+    if (p.type !== 'L') continue;
+    const parts = predictions[p.idx].t.split(/[-\s:]/);
+    const peakTime = new Date(+parts[0], +parts[1]-1, +parts[2], +parts[3], +parts[4] || 0);
+    if (Math.abs(peakTime.getTime() - targetMs) <= 2 * 3600 * 1000) {
+      return { time: predictions[p.idx].t.slice(11, 16), height: (+p.v).toFixed(1) };
+    }
+  }
+  return null;
+}
+
+function buildEmailSubject(matches) {
+  const best = matches.reduce((a, b) => (a.speed > b.speed ? a : b));
+  const cat = windCategory(best.speed);
+  const stationName = STATIONS[activeStation].name;
+  const kt = best.speed.toFixed(0);
+  if (cat.key === 'nuking')   return `🔥 IT'S NUKING at ${stationName} — ${kt}kt`;
+  if (cat.key === 'kiteon')   return `🪁 Kite wind at ${stationName} — ${kt}kt`;
+  if (cat.key === 'marginal') return `🟡 Marginal wind at ${stationName} — ${kt}kt`;
+  if (cat.key === 'foil')     return `🏄 Foil weather at ${stationName} — ${kt}kt`;
+  return `💨 Wind alert: ${stationName} — ${kt}kt`;
+}
+
+// Compact SMS version — aims to stay under 160 chars for a single message segment
+function buildSmsBody(cfg, matches) {
+  const stationName = STATIONS[activeStation].name;
+  const best = matches.reduce((a, b) => (a.speed > b.speed ? a : b));
+  const cat = windCategory(best.speed);
+  const bestTime = new Date(best.time);
+  const timeStr = bestTime.toLocaleString('en-GB', {
+    weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false
+  });
+  const bestLowTide = lastTidePredictions ? isNearLowTide(bestTime, lastTidePredictions) : null;
+
+  const tag = cat.key === 'nuking' ? 'NUKING'
+            : cat.key === 'kiteon' ? 'KITE-ON'
+            : cat.key === 'marginal' ? 'MARGINAL'
+            : cat.key === 'foil' ? 'FOIL'
+            : 'LIGHT';
+
+  let msg = `${cat.emoji} ${tag} @ ${stationName}\n${best.speed.toFixed(0)}kt (gusts ${best.gust.toFixed(0)}) peak ${timeStr}`;
+  if (bestLowTide) msg += `\n🌊 low tide ${bestLowTide.time}`;
+  msg += `\n${matches.length}h match in ${cfg.timeWindow}`;
+
+  if (msg.length > 155) msg = msg.substring(0, 152) + '...';
+  return msg;
+}
+
+function buildEmailBody(cfg, matches) {
+  const stationName = STATIONS[activeStation].name;
+  const best = matches.reduce((a, b) => (a.speed > b.speed ? a : b));
+  const bestCat = windCategory(best.speed);
+  const bestTime = new Date(best.time);
+  const bestLowTide = lastTidePredictions ? isNearLowTide(bestTime, lastTidePredictions) : null;
+
+  const bestTimeStr = bestTime.toLocaleString('en-GB', {
+    weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false
+  });
+
+  const lines = [];
+  lines.push(`🪁 KITE WIND ALERT — ${stationName}`);
+  lines.push('═══════════════════════════════════════');
+  lines.push('');
+
+  // Hype line: combo takes priority, otherwise regular category hype
+  if (bestLowTide && best.speed >= 15) {
+    lines.push(pickRandom(WIND_LOW_TIDE_HYPE));
+    lines.push('');
+  }
+  lines.push(pickRandom(HYPE_LINES[bestCat.key] || HYPE_LINES.light));
+  lines.push('');
+  lines.push(`Peak: ${best.speed.toFixed(1)} kt at ${bestTimeStr} — ${bestCat.label}`);
+  if (bestLowTide) {
+    lines.push(`🌊 Low tide near peak: ${bestLowTide.time} (${bestLowTide.height} ft)`);
+  }
+  lines.push('');
+  lines.push('Matching hours:');
+  matches.slice(0, 20).forEach(m => {
+    const t = new Date(m.time);
+    const dStr = t.toLocaleString('en-GB', {
+      weekday:'short', month:'short', day:'numeric',
+      hour:'2-digit', minute:'2-digit', hour12:false
+    });
+    const cat = windCategory(m.speed);
+    let line = `  ${cat.emoji} ${dStr} — ${m.speed.toFixed(1)} kt (gusts ${m.gust.toFixed(1)}) @ ${m.dir}°`;
+    if (lastTidePredictions) {
+      const low = isNearLowTide(t, lastTidePredictions);
+      if (low) line += ` 🌊 low tide`;
+    }
+    lines.push(line);
+  });
+  if (matches.length > 20) lines.push(`  …and ${matches.length - 20} more`);
+  lines.push('');
+  lines.push('─────');
+  lines.push(`Criteria: ${cfg.minSustained}kt+ sustained${cfg.minGust>0?', '+cfg.minGust+'kt gust':''}, ${cfg.directionMode} direction · ${cfg.timeWindow}`);
+  return lines.join('\n');
+}
+
+function showAlertResult(type, html) {
+  const el = document.getElementById('alert-result');
+  el.className = 'alert-result ' + type;
+  el.innerHTML = html;
+  el.style.display = 'block';
+}
+
+function updateAlertSummary() {
+  const cfg = loadAlertConfig();
+  const el = document.getElementById('alert-summary');
+  if (!cfg) {
+    el.textContent = 'Not configured · click to set up';
+    return;
+  }
+  const to = computeToAddress(cfg);
+  if (!to) {
+    el.textContent = 'Not configured · click to set up';
+  } else {
+    const kind = cfg.notifyType === 'sms' ? '📱' : '✉️';
+    el.textContent = `${kind} ${to} · ${cfg.minSustained}kt+ · ${cfg.timeWindow} · ${cfg.directionMode}`;
+  }
+}
+
+function toggleCustomDir() {
+  const v = document.getElementById('alert-direction').value;
+  document.getElementById('alert-custom-dir').style.display = v === 'custom' ? 'flex' : 'none';
+}
+
+function toggleNotifyType() {
+  const v = document.getElementById('alert-type').value;
+  document.getElementById('alert-email-row').style.display   = v === 'email' ? 'flex' : 'none';
+  document.getElementById('alert-phone-row').style.display   = v === 'sms'   ? 'flex' : 'none';
+  document.getElementById('alert-carrier-row').style.display = v === 'sms'   ? 'flex' : 'none';
+}
+
+// Wire up UI
+document.getElementById('alert-header').addEventListener('click', () => {
+  const card = document.getElementById('alert-card');
+  const body = document.getElementById('alert-body');
+  const open = body.style.display === 'none' || !body.style.display;
+  body.style.display = open ? 'block' : 'none';
+  card.classList.toggle('open', open);
+});
+
+document.getElementById('alert-direction').addEventListener('change', toggleCustomDir);
+document.getElementById('alert-type').addEventListener('change', toggleNotifyType);
+
+document.getElementById('alert-save').addEventListener('click', () => {
+  const cfg = readFormConfig();
+  const to = computeToAddress(cfg);
+  if (!to) {
+    showAlertResult('error', cfg.notifyType === 'sms'
+      ? 'Enter a phone number and pick a carrier.'
+      : 'Enter an email address first.');
+    return;
+  }
+  saveAlertConfig(cfg);
+  updateAlertSummary();
+  showAlertResult('success', `✓ Alert saved. Will notify <strong>${to}</strong> on every refresh (every 6 min) when conditions match.` +
+    (cfg.notifyType === 'sms'
+      ? `<div style="margin-top:8px;color:var(--sub);font-size:.75rem">⚠️ Make sure <code>${to}</code> is in your Cloudflare Worker's <code>ALLOWED_RECIPIENTS</code>, otherwise sends will be blocked.</div>`
+      : ''));
+});
+
+document.getElementById('alert-test').addEventListener('click', () => {
+  const cfg = readFormConfig();
+  const to = computeToAddress(cfg);
+  if (!to) {
+    showAlertResult('error', cfg.notifyType === 'sms'
+      ? 'Enter a phone number and pick a carrier.'
+      : 'Enter an email address first.');
+    return;
+  }
+  if (!lastForecastData) {
+    showAlertResult('error', 'No forecast data loaded yet — wait a moment and try again.');
+    return;
+  }
+  const matches = checkCriteria(lastForecastData, cfg);
+  if (matches.length === 0) {
+    showAlertResult('info',
+      `No matching hours found in your time window. ` +
+      `Either conditions don't meet your criteria, or your criteria are too strict.`);
+    return;
+  }
+  const body = cfg.notifyType === 'sms'
+    ? buildSmsBody(cfg, matches)
+    : buildEmailBody(cfg, matches);
+  const subject = buildEmailSubject(matches);
+  const label = cfg.notifyType === 'sms' ? `text to ${to}` : `email to ${to}`;
+  showAlertResult('success',
+    `✓ <strong>${matches.length} matching hour(s) found.</strong> Preview of ${label}:` +
+    (cfg.notifyType === 'email' ? `<div style="margin-top:6px;color:var(--sub);font-size:.75rem">Subject: ${subject}</div>` : '') +
+    `<pre>${body.replace(/</g,'&lt;')}</pre>` +
+    (ALERT_WORKER_URL ? '' : '<div style="margin-top:10px;color:var(--sub);font-size:.75rem">⚠️ ALERT_WORKER_URL not configured — see code comments to enable actual sending.</div>')
+  );
+});
+
+document.getElementById('alert-send-test').addEventListener('click', async () => {
+  const cfg = readFormConfig();
+  const to = computeToAddress(cfg);
+  if (!to) {
+    showAlertResult('error', cfg.notifyType === 'sms' ? 'Enter a phone number and pick a carrier.' : 'Enter an email address first.');
+    return;
+  }
+  const btn = document.getElementById('alert-send-test');
+  btn.disabled = true;
+  showAlertResult('info', `Sending test to <strong>${to}</strong>…`);
+  try {
+    const resp = await fetch(ALERT_WORKER_URL, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        to,
+        subject: 'Kite Wind Watch TEST alert',
+        body: 'Test alert from Kiteboarding Wind Watch. If you got this, alerts work.'
+      }),
+    });
+    if (resp.ok) showAlertResult('success', `✓ Test sent to <strong>${to}</strong>. Check your inbox (and spam).`);
+    else showAlertResult('error', `Send failed (${resp.status}): ${(await resp.text()).slice(0,200)}`);
+  } catch (e) {
+    showAlertResult('error', 'Send failed: ' + e.message);
+  } finally { btn.disabled = false; }
+});
+
+document.getElementById('alert-clear').addEventListener('click', () => {
+  if (!confirm('Clear saved alert config?')) return;
+  localStorage.removeItem(ALERT_KEY);
+  document.getElementById('alert-email').value = '';
+  document.getElementById('alert-phone').value = '';
+  document.getElementById('alert-type').value = 'email';
+  toggleNotifyType();
+  updateAlertSummary();
+  showAlertResult('info', 'Alert configuration cleared.');
+});
+
+// Background check: every forecast refresh, if a config is saved and matches, send.
+async function maybeSendAlert() {
+  const cfg = loadAlertConfig();
+  if (!cfg || !cfg.enabled) return;
+  const to = computeToAddress(cfg);
+  if (!to) return;
+  if (!lastForecastData) return;
+  const matches = checkCriteria(lastForecastData, cfg);
+  if (matches.length === 0) return;
+
+  // Cooldown
+  const now = Date.now();
+  if (cfg.lastSent && (now - cfg.lastSent) < cfg.cooldownHours*3600*1000) return;
+
+  if (!ALERT_WORKER_URL) {
+    console.log('[alerts] Match found but ALERT_WORKER_URL not set. Would send:', matches.length, 'hours');
+    return;
+  }
+
+  try {
+    const body = cfg.notifyType === 'sms'
+      ? buildSmsBody(cfg, matches)
+      : buildEmailBody(cfg, matches);
+    const subject = buildEmailSubject(matches);
+    const resp = await fetch(ALERT_WORKER_URL, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ to, subject, body }),
+    });
+    if (resp.ok) {
+      cfg.lastSent = now;
+      saveAlertConfig(cfg);
+      console.log('[alerts] Sent to', to);
+    } else {
+      console.warn('[alerts] Send failed:', resp.status, await resp.text());
+    }
+  } catch (e) {
+    console.warn('[alerts] Send failed:', e.message);
+  }
+}
+async function loadForecast() {
+  const st=STATIONS[activeStation];
+  document.getElementById('fc-loading').style.display='flex';
+  document.getElementById('fc-table-wrap').style.display='none';
+  try {
+    const fc=await fetchForecast(st.lat,st.lon,fcModel,st.timezone);
+    lastForecastData = fc;
+    renderForecastTable(fc,fcInterval);
+    renderWindChart(fc);
+    const reqStation = activeStation, reqModel = fcModel;
+    fetchOverlays(st).then(ov => {
+      if (activeStation !== reqStation || fcModel !== reqModel || lastForecastData !== fc) return;
+      if (ov.length) renderWindChart(fc, ov);
+    }).catch(e => console.warn('Model overlay failed:', e.message));
+  } catch(e) {
+    console.warn('Forecast fallback:',e.message);
+    const mock = makeMockForecast();
+    lastForecastData = mock;
+    renderForecastTable(mock,fcInterval);
+    renderWindChart(mock);
+  }
+}
+
+async function loadAll() {
+  try {
+    renderLive(await fetchLive(activeStation));
+  } catch(e) {
+    console.warn('Live fallback:',e.message);
+    renderLive(makeMockLive());
+  }
+  await loadForecast();
+  loadTides();
+  maybeSendAlert();
+}
+
+window.addEventListener('load',()=>{
+  // Default particles off on mobile — less battery drain and easier to read
+  if (IS_MOBILE) {
+    particleFullscreen = false;
+    document.body.classList.remove('particles-full');
+    const toggle = document.getElementById('particle-toggle');
+    if (toggle) toggle.classList.remove('active');
+    const lbl = document.getElementById('pt-label');
+    if (lbl) lbl.textContent = 'wind overlay: off';
+  }
+  syncCanvases();
+  initMap();
+  startParticles();
+  updateSubtitle();
+  // Restore saved alert config to form
+  writeFormFromConfig(loadAlertConfig());
+  updateAlertSummary();
+  loadAll();
+  window.addEventListener('resize',()=>{
+    syncCanvases();
+    initPool(mapParticles,  mapCanvas.width,  mapCanvas.height,  NUM_PARTICLES);
+    if(particleFullscreen) initPool(fullParticles, fsCanvas.width, fsCanvas.height, NUM_PARTICLES*2);
+  });
+  setInterval(loadAll,6*60*1000);
+});
+</script>
+</body>
+</html>
